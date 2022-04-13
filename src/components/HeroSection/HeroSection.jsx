@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import BG from '../../assets/img/BG.png';
+import BG from '../../assets/img/Bgimage1.png';
 import sergeyImg from '../../assets/img/sergey-vinogradov.png'
 const Container = styled.div`
     width: 100%;

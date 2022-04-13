@@ -1,11 +1,19 @@
-import React from 'react'
-import Header from './components/Header/Header';
-import HeroSection from './components/HeroSection/HeroSection'
+import React from "react";
+import GlobalStyle from "./globalStyle";
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import MemoryMintHome from "./components/MemoryMintHome";
+import NewEraPage from "./components/NewEraPage";
+
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <HeroSection/>
+      <GlobalStyle />
+      <Header />
+      {/* <HeroSection /> */}
+      <MemoryMintHome />
+      <NewEraPage />
+
     </div>
   );
 }
