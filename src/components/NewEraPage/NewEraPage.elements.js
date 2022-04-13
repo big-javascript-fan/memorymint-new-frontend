@@ -2,11 +2,14 @@ import styled from 'styled-components'
 import bg2 from "../../assets/img/Bgimage2.png";
 
 export const Container = styled.div `
-margin-right:auto;
-margin-left:auto;
-padding:0px 200px 0px 200px;
-background-image: url(${bg2});
-height:500px
+    margin-right:auto;
+    margin-left:auto;
+    padding:0px 200px 0px 200px;
+    background-image: url(${bg2});
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 `;
 
@@ -26,30 +29,30 @@ export const InfoColumn= styled.div`
  `;
 
 export const TextWrapper = styled.div`
-max-width:540px;
+    max-width:540px;
 `;
 
 export const Heading = styled.h1`
-margin-bottom:24px;
-font-size:18px;
-font-weight:700;
+    margin-bottom:24px;
+    font-size:18px;
+    font-weight:700;
 `
 export const Subtitle = styled.p`
-font-family:'Roboto';
-font-size:14px;
-font-weight:500;
+    font-family:'Roboto';
+    font-size:14px;
+    font-weight:500;
 
 `
 
 export const ImgWarpper = styled.div `
-display:flex;
+    display:flex;
 `;
 export const Img = styled.img`
-padding-right:0;
-border:0;
-max-width:100%;
-width:231px;
-height:231px;
-max-height:500px;
-p
+    padding-right:0;
+    border:0;
+    max-width:100%;
+    width:231px;
+    height:231px;
+    max-height:500px;
+
 `

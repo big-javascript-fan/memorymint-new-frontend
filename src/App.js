@@ -12,7 +12,7 @@ function App() {
       <Header />
       {/* <HeroSection /> */}
       <MemoryMintHome />
-      <NewEraPage />
+      {/* <NewEraPage /> */}
 
     </div>
   );
