@@ -5,7 +5,9 @@ const ExperienceSection = () => {
     <Container>
       <Card>
           <TitleSec>They're Experiences</TitleSec>
-          <Button>Launch sample</Button>
+          <Button onClick={() => {
+            // TODO: Handle Click
+          }}>Launch sample</Button>
           </Card>
     </Container>
   );

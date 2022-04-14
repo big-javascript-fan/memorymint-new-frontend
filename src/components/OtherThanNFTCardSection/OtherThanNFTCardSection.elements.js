@@ -1,14 +1,11 @@
 import styled from "styled-components";
 import { devices } from "../constant";
+import img from '../../assets/img/image6.png';
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding:0px 180px 0px 200px;
-  height: 1080px;
-  background-color: #010101;
-  flex-direction: column;
-
+  
+  background-image:url(${img});
+  background-repeat: no-repeat;
+  background-size: cover;
   @media ${devices.laptopM} {
     height: 800px;
   }
@@ -22,6 +19,19 @@ export const Container = styled.div`
   }
 }
 `;
+
+export const GradientContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0px 180px 0px 200px;
+  height: 1080px;
+  background-color: #010101;
+  flex-direction: column;
+  background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
+
+`;
+
 export const SubContainer = styled.div`
   display: flex;
   flex-wrap: wrap;

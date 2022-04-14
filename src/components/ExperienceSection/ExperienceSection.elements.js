@@ -23,16 +23,16 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-height: 320px;
-width: 1517px;
-border-radius: 30px;
-display: flex;
-background: rgba(255, 255, 255, 0.025);
-box-shadow: inset 67.0077px -67.0077px 67.0077px rgba(194, 194, 194, 0.025), inset -67.0077px 67.0077px 67.0077px rgba(255, 255, 255, 0.025);
-backdrop-filter: blur(203.703px);
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  height: 320px;
+  width: 1517px;
+  border-radius: 30px;
+  display: flex;
+  background: rgba(255, 255, 255, 0.025);
+  box-shadow: inset 67.0077px -67.0077px 67.0077px rgba(194, 194, 194, 0.025), inset -67.0077px 67.0077px 67.0077px rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(203.703px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 `;
 
@@ -53,4 +53,5 @@ export const Button = styled.button`
   border-radius: 8px;
   border: none;
   padding: 20px 30px;
+  cursor: pointer;
 `;
