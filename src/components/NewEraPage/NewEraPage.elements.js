@@ -1,22 +1,37 @@
 import styled from 'styled-components'
-import bg2 from "../../assets/img/Bgimage2.png";
+import { devices } from "../constant";
 
 export const Container = styled.div `
-    margin-right:auto;
-    margin-left:auto;
-    padding:0px 200px 0px 200px;
-    background-image: url(${bg2});
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
-    height: 1080px;
-    background-repeat: no-repeat;
-    background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right:auto;
+margin-left:auto;
+padding:0px 180px 0px 200px;
+height: 1080px;
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #010101;
+
+@media ${devices.laptopM} {
+  height: 800px;
+}
+@media ${devices.laptop} {
+  height: 700px;
+  padding:0px 50px 0px 50px;
+}
+@media ${devices.mobileL} {
+  padding:0px 10px 0px 10px;
+  height: 500px;
+}
+}
 }
 `;
 
 export const InfoRow = styled.div`
 display:flex;
-align-items: flex-end;
-padding-top:150px
+align-items: center;
+justify-content: flex-start;
 `;
 
 export const InfoColumn= styled.div`
@@ -34,7 +49,7 @@ export const TextWrapper = styled.div`
 
 export const Heading = styled.h1`
     margin-bottom:24px;
-    font-size:18px;
+    font-size: 42px;
     font-weight:700;
 `
 export const Subtitle = styled.p`
@@ -51,8 +66,8 @@ export const Img = styled.img`
     padding-right:0;
     border:0;
     max-width:100%;
-    width:231px;
-    height:231px;
+    width:431px;
+    height:431px;
     max-height:500px;
 
 `

@@ -4,7 +4,12 @@ import Header from "./components/Header/Header";
 import HeroSection from "./components/HeroSection/HeroSection";
 import MemoryMintHome from "./components/MemoryMintHome";
 import NewEraPage from "./components/NewEraPage";
-
+import CardsSection from "./components/CardsSection";
+import ExperienceSection from "./components/ExperienceSection";
+import OtherThanNFTCardSection from "./components/OtherThanNFTCardSection";
+import TicketMetaVerseSection from "./components/TicketMetaVerseSection";
+import FaqSection from "./components/FaqSection";
+import ReachOutSection from "./components/ReachOutSection";
 function App() {
   return (
     <div className="App">
@@ -12,8 +17,13 @@ function App() {
       <Header />
       {/* <HeroSection /> */}
       <MemoryMintHome />
-      {/* <NewEraPage /> */}
-
+      <CardsSection />
+      <ExperienceSection />
+      <OtherThanNFTCardSection />
+      <NewEraPage />
+      <TicketMetaVerseSection />
+      <FaqSection />
+      <ReachOutSection/>
     </div>
   );
 }
