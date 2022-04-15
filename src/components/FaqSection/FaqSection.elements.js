@@ -14,10 +14,8 @@ export const Container = styled.div`
   }
   @media ${devices.laptop} {
     height: 700px;
-    padding:0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
-    padding:0px 10px 0px 10px;
     height: 500px;
   }
 }
@@ -47,16 +45,23 @@ export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  flex-wrap: wrap;
+  @media ${devices.laptopM} {
+    justify-content: center;
+  }
 `;
 
 export const InfoColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.div`
+  @media ${devices.laptopM} {
+    margin-bottom: 30px;
+  }
+`;
 
 export const Heading = styled.div`
   font-style: normal;
@@ -73,12 +78,14 @@ export const Heading = styled.div`
     font-size: 18px;
   }
 `;
-export const Subtitle = styled.div`
-  margin-top: 30px;
+export const Questions = styled.div`
+  padding: 30px 0px;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  /* identical to box height */
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
   @media ${devices.laptopM} {
     font-size: 18px;
   }

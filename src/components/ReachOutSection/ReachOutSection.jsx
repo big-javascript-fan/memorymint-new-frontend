@@ -8,6 +8,7 @@ import {
   TextArea,
   GradientContainer,
   InputSubContainer,
+  Button
 } from "./ReachOutSection.elements";
 const ReachOutSection = () => {
   return (
@@ -26,6 +27,7 @@ const ReachOutSection = () => {
           <InputSubContainer>
             <TextArea placeholder="Message" />
           </InputSubContainer>
+          <Button>Submit</Button>
         </TextWrapper>
       </GradientContainer>
     </Container>

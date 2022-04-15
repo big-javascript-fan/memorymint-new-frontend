@@ -8,18 +8,16 @@ export const FooterContainer = styled.div`
   box-shadow: inset 38.1388px -38.1388px 38.1388px rgba(149, 149, 149, 0.01),
     inset -38.1388px 38.1388px 38.1388px rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(25.1716px);
-  height:100px;
-
+  height: 100px;
 `;
 
 export const Logo = styled.div`
-font-size: 32px;
+  font-size: 32px;
 `;
 
 export const FooterMenu = styled.div`
-display:flex;
-  width: 35px;
-  height: 35px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   :hover {
     transform: scale(1.25, 1.25);
@@ -27,7 +25,6 @@ display:flex;
 `;
 
 export const CopyRightSec = styled.div`
-font-size: 16px;
-font-weight: 400;
-
+  font-size: 16px;
+  font-weight: 400;
 `;

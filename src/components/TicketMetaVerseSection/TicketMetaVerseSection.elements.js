@@ -13,10 +13,8 @@ export const Container = styled.div`
   }
   @media ${devices.laptop} {
     height: 700px;
-    padding:0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
-    padding:0px 10px 0px 10px;
     height: 500px;
   }
 }
@@ -43,6 +41,10 @@ background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 1
 export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
+  @media ${devices.laptopM} {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const InfoColumn = styled.div`
@@ -86,17 +88,32 @@ export const Subtitle = styled.div`
   }
 `;
 export const Button = styled.button`
-  font-family: "Avenir Next LT Pro";
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: #ffffff;
   background-color: #f94144;
   border-radius: 8px;
   border: none;
   padding: 20px 30px;
   margin-top: 100px;
+  @media ${devices.laptopM} {
+    padding: 10px 20px;
+    margin-top: 40px;
+    font-size: 18px;
+
+  }
+  @media ${devices.laptop} {
+    padding: 5px 10px;
+    margin-top: 30px;
+    font-size: 14px;
+
+  }
+  @media ${devices.mobileL} {
+    margin-top: 20px;
+    font-size: 12px;
+
+  }
 `;
 
 export const ImgWarpper = styled.div`
@@ -110,19 +127,28 @@ export const Img = styled.img`
 
   @media ${devices.laptopM} {
     width: 500px;
-    height: 800px;
+    height: 480px;
   }
   @media ${devices.laptop} {
-    width: 450px;
-    height: 700px;
+    width: 400px;
+    height: 300px;
   }
   @media ${devices.mobileL} {
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 200px;
   }
 `;
 export const ListContainer = styled.ul`
   margin-top: 80px;
+  @media ${devices.laptopM} {
+    margin-top: 60px;
+  }
+  @media ${devices.laptop} {
+    margin-top: 40px;
+  }
+  @media ${devices.mobileL} {
+    margin-top: 20px;
+  }
 `;
 
 export const List = styled.li`
@@ -132,11 +158,14 @@ export const List = styled.li`
   margin-bottom: 20px;
   @media ${devices.laptopM} {
     font-size: 18px;
+    margin-bottom: 15px;
   }
   @media ${devices.laptop} {
     font-size: 14px;
+    margin-bottom: 10px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;
+    margin-bottom: 5px;
   }
 `;

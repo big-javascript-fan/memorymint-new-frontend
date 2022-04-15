@@ -29,7 +29,7 @@ const NewEraPage = () => {
             </TextWrapper>
           </InfoColumn>
           <ImgWarpper>
-            <Img src={img1} />
+            <Img src={img1} style={{ width: "421px", height: "421px" }} />
           </ImgWarpper>
         </InfoRow>
         <InfoRow

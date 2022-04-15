@@ -11,10 +11,8 @@ export const Container = styled.div`
   }
   @media ${devices.laptop} {
     height: 700px;
-    padding:0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
-    padding:0px 10px 0px 10px;
     height: 500px;  
   }
 }
@@ -26,10 +24,17 @@ export const GradientContainer = styled.div`
   justify-content: center;
   padding:0px 180px 0px 200px;
   height: 1080px;
-  background-color: #010101;
   flex-direction: column;
   background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
-
+  @media ${devices.laptopM} {
+    height: 800px;
+  }
+  @media ${devices.laptop} {
+    height: 700px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;  
+  }
 `;
 
 export const SubContainer = styled.div`
@@ -51,6 +56,10 @@ backdrop-filter: blur(92.0549px);
 flex-direction: column;
 align-items: center;
 justify-content: center;
+
+@media ${devices.laptopM} {
+  height: 200px;
+}
 }
 `;
 

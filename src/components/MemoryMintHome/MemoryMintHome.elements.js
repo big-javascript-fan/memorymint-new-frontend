@@ -24,27 +24,25 @@ export const Container = styled.div`
 `;
 
 export const InfoRow = styled.div`
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const InfoColumn = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const TextWrapper = styled.div`
-  
-`;
+export const TextWrapper = styled.div``;
 
 export const Heading = styled.div`
-  font-family: 'Avenir Next LT Pro';
+  font-family: "Avenir Next LT Pro";
   font-style: normal;
   font-weight: 700;
   font-size: 122px;
-  color: #FFFFFF;
+  color: #ffffff;
   @media ${devices.laptopM} {
     font-size: 100px;
   }
@@ -57,35 +55,44 @@ export const Heading = styled.div`
 `;
 export const Subtitle = styled.div`
   margin-top: 10px;
-  font-family: 'Avenir Next LT Pro';
+  font-family: "Avenir Next LT Pro";
   font-style: normal;
   font-weight: 500;
   font-size: 35px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: #ffffff;
   @media ${devices.laptopM} {
     font-size: 33px;
   }
   @media ${devices.laptop} {
-    font-size:28px;
+    font-size: 28px;
   }
   @media ${devices.mobileL} {
     font-size: 23px;
   }
-
 `;
 export const Button = styled.button`
-  font-family: "Avenir Next LT Pro";
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
   text-align: center;
-  color: #ffffff;
   background-color: #f94144;
   border-radius: 8px;
   border: none;
   padding: 20px 30px;
   margin-top: 100px;
+  @media ${devices.laptopM} {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  @media ${devices.laptop} {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  @media ${devices.mobileL} {
+    margin-top: 20px;
+    font-size: 12px;
+  }
 `;
 
 export const ImgWarpper = styled.div`

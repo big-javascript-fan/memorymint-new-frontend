@@ -5,11 +5,31 @@ import {
   InfoColumn,
   TextWrapper,
   Heading,
-  Subtitle,
+  Questions,
   ImgWarpper,
   Img,
   GradientContainer,
 } from "./FaqSection.elements";
+import QuestionArrowIcon from "../common/icons/QuestionArrowIcon";
+
+const data = [
+  {
+    question: "WHAT BLOCKCHAIN ARE MEMORY MINTS MINTED ON?",
+  },
+  {
+    question:
+      "WHAT’S THE DIFFERENCE BETWEEN A MEMORY, A DREAM AND AN EXPERIENCE?",
+  },
+  {
+    question: "WHAT IS A MEMORY MINT?",
+  },
+  {
+    question: "WHAT’S AN IMMERSIVE NFT?",
+  },
+  {
+    question: "HOW DO YOU MAKE AN IMMERSIVE NFT?",
+  },
+];
 const FaqSection = () => {
   return (
     <Container>
@@ -18,14 +38,13 @@ const FaqSection = () => {
           <InfoColumn>
             <TextWrapper>
               <Heading>FAQ</Heading>
-              <Subtitle>WHAT BLOCKCHAIN ARE MEMORY MINTS MINTED ON?</Subtitle>
-              <Subtitle>
-                WHAT’S THE DIFFERENCE BETWEEN A MEMORY, A DREAM AND AN
-                EXPERIENCE?
-              </Subtitle>
-              <Subtitle>WHAT IS A MEMORY MINT?</Subtitle>
-              <Subtitle>WHAT’S AN IMMERSIVE NFT?</Subtitle>
-              <Subtitle>HOW DO YOU MAKE AN IMMERSIVE NFT?</Subtitle>
+              {data.map((d) => {
+                return (
+                  <Questions>
+                    {d.question} <QuestionArrowIcon />{" "}
+                  </Questions>
+                );
+              })}
             </TextWrapper>
           </InfoColumn>
           <ImgWarpper>

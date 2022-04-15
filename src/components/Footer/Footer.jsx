@@ -12,7 +12,7 @@ const Footer = () => {
       <Logo>TheMemoryMint</Logo>
       <CopyRightSec>All rights reserved 2022. Visible Things</CopyRightSec>
       <FooterMenu>
-        Top <MoveTop />
+        Top{' '}<MoveTop />
       </FooterMenu>
     </FooterContainer>
   );
