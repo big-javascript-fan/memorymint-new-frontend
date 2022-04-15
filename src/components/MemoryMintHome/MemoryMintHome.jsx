@@ -10,11 +10,13 @@ import {
   Img,
   Button,
   Scroll,
-  SocialContainer
+  SocialContainer,
 } from "./MemoryMintHome.elements";
 import leftSideImg from "../../assets/img/sergey-vinogradov.png";
-import ScrollIcon from '../common/icons/ScrollIcon';
-import SocialIcons from '../common/SocialIcons'
+import ScrollIcon from "../common/icons/ScrollIcon";
+import SocialIcons from "../common/SocialIcons";
+import { Link } from "react-router-dom";
+
 const MemoryMintHome = () => {
   const scrollTo = (elem) => {
     const anchor = document.querySelector(`#${elem}`);
@@ -27,7 +29,9 @@ const MemoryMintHome = () => {
           <TextWrapper>
             <Heading>Memory Mint</Heading>
             <Subtitle>MEMORIES FADE. NFT'S DON'T.</Subtitle>
-            <Button>Pre-sale is live now</Button>
+            <Link to="/sale">
+              <Button>Pre-sale is live now</Button>
+            </Link>
           </TextWrapper>
           <Scroll onClick={() => scrollTo("footer")}>
               <ScrollIcon />
@@ -36,7 +40,7 @@ const MemoryMintHome = () => {
         <ImgWarpper>
           <Img src={leftSideImg} />
           <SocialContainer>
-            <SocialIcons/>
+            <SocialIcons />
           </SocialContainer>
         </ImgWarpper>
       </InfoRow>
