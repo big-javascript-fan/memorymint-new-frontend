@@ -1,6 +1,6 @@
 import React from "react";
 
-const QuestionArrowIcon = () => {
+const QuestionArrowOpenIcon = () => {
   return (
     <svg
       width="24"
@@ -17,4 +17,4 @@ const QuestionArrowIcon = () => {
   );
 };
 
-export default QuestionArrowIcon;
+export default QuestionArrowOpenIcon;

@@ -81,6 +81,10 @@ export const Button = styled.button`
   border: none;
   padding: 20px 30px;
   margin-top: 100px;
+  cursor: pointer;
+  :hover {
+    transform:scale(1.1, 1.1);
+  }
   @media ${devices.laptopM} {
     margin-top: 50px;
     font-size: 18px;
@@ -118,6 +122,7 @@ export const Img = styled.img`
 export const Scroll = styled.div`
   align-self: flex-start;
   margin-top: 100px;
+  cursor: pointer;
 `;
 export const SocialContainer = styled.div`
   position: absolute;

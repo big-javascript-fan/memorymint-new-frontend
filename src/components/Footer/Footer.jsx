@@ -7,11 +7,15 @@ import {
   CopyRightSec,
 } from "./Footer.elements";
 const Footer = () => {
+  const scrollTo = (elem) => {
+    const anchor = document.querySelector(`#${elem}`);
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
   return (
-    <FooterContainer>
+    <FooterContainer id="footer">
       <Logo>TheMemoryMint</Logo>
       <CopyRightSec>All rights reserved 2022. Visible Things</CopyRightSec>
-      <FooterMenu>
+      <FooterMenu onClick={() => scrollTo("header")}>
         Top{' '}<MoveTop />
       </FooterMenu>
     </FooterContainer>

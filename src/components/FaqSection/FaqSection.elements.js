@@ -78,14 +78,16 @@ export const Heading = styled.div`
     font-size: 18px;
   }
 `;
+export const QuestionContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
 export const Questions = styled.div`
-  padding: 30px 0px;
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  border-bottom: 1px solid gray;
-  display: flex;
-  justify-content: space-between;
+  
   @media ${devices.laptopM} {
     font-size: 18px;
   }
@@ -96,6 +98,47 @@ export const Questions = styled.div`
     font-size: 12px;
   }
 `;
+export const QAContainer = styled.div`
+  padding: 30px 0px 15px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  border-bottom: 1px solid gray;
+  @media ${devices.laptopM} {
+    font-size: 18px;
+  }
+  @media ${devices.laptop} {
+    font-size: 14px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+  }
+`;
+export const IconContainer = styled.div`
+  cursor: pointer;
+`
+export const Answer = styled.div`
+  display: ${props => props.display ? "block" : "none"};
+  font-weight: 400;
+font-size: 18px;
+line-height: 31px;
+/* identical to box height, or 172% */
+
+
+color: #FFFFFF;
+
+  margin-left:10px; 
+  @media ${devices.laptopM} {
+    font-size: 15px;
+  }
+  @media ${devices.laptop} {
+    font-size: 13px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+  }
+`;
+
 export const Button = styled.button`
   font-family: "Avenir Next LT Pro";
   font-weight: 500;

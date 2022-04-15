@@ -16,6 +16,10 @@ import leftSideImg from "../../assets/img/sergey-vinogradov.png";
 import ScrollIcon from '../common/icons/ScrollIcon';
 import SocialIcons from '../common/SocialIcons'
 const MemoryMintHome = () => {
+  const scrollTo = (elem) => {
+    const anchor = document.querySelector(`#${elem}`);
+    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
   return (
     <Container>
       <InfoRow>
@@ -25,10 +29,8 @@ const MemoryMintHome = () => {
             <Subtitle>MEMORIES FADE. NFT'S DON'T.</Subtitle>
             <Button>Pre-sale is live now</Button>
           </TextWrapper>
-          <Scroll>
-              <ScrollIcon onClick = {() => {
-                // TODO: Click handler
-              }}/>
+          <Scroll onClick={() => scrollTo("footer")}>
+              <ScrollIcon />
           </Scroll>
         </InfoColumn>
         <ImgWarpper>
