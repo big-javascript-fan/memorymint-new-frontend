@@ -81,6 +81,7 @@ export const Button = styled.button`
   border: none;
   padding: 20px 30px;
   margin-top: 100px;
+  cursor: pointer;
   @media ${devices.laptopM} {
     margin-top: 50px;
     font-size: 18px;

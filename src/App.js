@@ -1,32 +1,25 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import GlobalStyle from "./globalStyle";
 import Header from "./components/Header/Header";
-import HeroSection from "./components/HeroSection/HeroSection";
-import MemoryMintHome from "./components/MemoryMintHome";
-import NewEraPage from "./components/NewEraPage";
-import CardsSection from "./components/CardsSection";
-import ExperienceSection from "./components/ExperienceSection";
-import OtherThanNFTCardSection from "./components/OtherThanNFTCardSection";
-import TicketMetaVerseSection from "./components/TicketMetaVerseSection";
-import RoadMapSec from "./components/RoadMapSec";
-import FaqSection from "./components/FaqSection";
-import ReachOutSection from "./components/ReachOutSection";
 import Footer from "./components/Footer/Footer";
+import Home from "./Pages/Home.jsx";
+import ProductsListPage from "./Pages/ProductsListPage"
+
+
+
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
       <Header />
-      {/* <HeroSection /> */}
-      <MemoryMintHome />
-      <CardsSection />
-      <ExperienceSection />
-      <OtherThanNFTCardSection />
-      <NewEraPage />
-      <TicketMetaVerseSection />
-      <RoadMapSec />
-      <FaqSection />
-      <ReachOutSection />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sale" element={<ProductsListPage />} />
+        </Routes>
+      </BrowserRouter>
+
       <Footer />
     </div>
   );
