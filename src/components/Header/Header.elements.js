@@ -4,13 +4,14 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     padding: 20px 200px;
     align-items: center;
-    background: #000;
+    background-color: #111111;
     box-shadow: inset 38.1388px -38.1388px 38.1388px rgba(149, 149, 149, 0.01), inset -38.1388px 38.1388px 38.1388px rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(25.1716px);
+    height:100px;
 `
 
 export const Logo = styled.div`
- color: #fff;
+font-size:32px;
 `
 
 export const HomeMenu= styled.div`

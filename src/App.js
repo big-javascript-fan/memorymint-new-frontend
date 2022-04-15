@@ -8,8 +8,10 @@ import CardsSection from "./components/CardsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import OtherThanNFTCardSection from "./components/OtherThanNFTCardSection";
 import TicketMetaVerseSection from "./components/TicketMetaVerseSection";
+import RoadMapSec from "./components/RoadMapSec";
 import FaqSection from "./components/FaqSection";
 import ReachOutSection from "./components/ReachOutSection";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
@@ -22,8 +24,10 @@ function App() {
       <OtherThanNFTCardSection />
       <NewEraPage />
       <TicketMetaVerseSection />
+      <RoadMapSec />
       <FaqSection />
-      <ReachOutSection/>
+      <ReachOutSection />
+      <Footer />
     </div>
   );
 }

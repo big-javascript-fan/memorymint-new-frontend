@@ -1,9 +1,21 @@
-import React from 'react'
-
+import React from "react";
+import MoveTop from "../common/icons/MoveTop";
+import {
+  FooterContainer,
+  Logo,
+  FooterMenu,
+  CopyRightSec,
+} from "./Footer.elements";
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <FooterContainer>
+      <Logo>TheMemoryMint</Logo>
+      <CopyRightSec>All rights reserved 2022. Visible Things</CopyRightSec>
+      <FooterMenu>
+        Top <MoveTop />
+      </FooterMenu>
+    </FooterContainer>
+  );
+};
 
-export default Footer
+export default Footer;

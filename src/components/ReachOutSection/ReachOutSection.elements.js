@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { devices } from "../constant";
+import img from '../../assets/img/Bgimage4.png';
+
 export const Container = styled.div`
-display: flex;
-align-items: center;
-  padding:0px 180px 0px 200px;
   height: 1080px;
-  background-color: #010101;
-  
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media ${devices.laptopM} {
     height: 800px;
   }
@@ -21,6 +22,23 @@ align-items: center;
 }
 `;
 
+export const GradientContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+padding:0px 180px 0px 200px;
+height: 100%;
+background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
+@media ${devices.laptopM} {
+  height: 800px;
+}
+@media ${devices.laptop} {
+  height: 700px;
+}
+@media ${devices.mobileL} {
+  height: 500px;  
+}
+`
 export const TextWrapper = styled.div``;
 
 export const Heading = styled.div`
@@ -42,19 +60,23 @@ export const Heading = styled.div`
 export const InputsContainer = styled.div`
 display:flex;
 `
+export const InputSubContainer = styled.div`
+border-bottom: 1px solid gray;
+margin:20px;
+`
 export const Input = styled.input`
 background: transparent;
-border-bottom: 1px solid gray;
+border: 0px solid;
 outline: none;
 width:745px;
 height:31px;
 color:#fffff;
-margin:50px 30px 50px 0px;
+padding-bottom:10px;
 
 `
 export const TextArea = styled.textarea`
 background: transparent;
-border-bottom: 1px solid gray;
+border: 0px solid;
 outline: none;
 width:100%;
 height:31px;

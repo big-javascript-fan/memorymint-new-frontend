@@ -1,17 +1,12 @@
 import styled from 'styled-components'
 import { devices } from "../constant";
+import img from '../../assets/img/Bgimage2.png';
 
 export const Container = styled.div `
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right:auto;
-margin-left:auto;
-padding:0px 180px 0px 200px;
+
 height: 1080px;
-background-repeat: no-repeat;
-background-size: cover;
-background-color: #010101;
+
+background-image: url(${img});
 
 @media ${devices.laptopM} {
   height: 800px;
@@ -27,6 +22,23 @@ background-color: #010101;
 }
 }
 `;
+export const GradientContainer = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+padding:0px 10px 0px 10px;
+height: 100%;
+background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
+@media ${devices.laptopM} {
+  height: 800px;
+}
+@media ${devices.laptop} {
+  height: 700px;
+}
+@media ${devices.mobileL} {
+  height: 500px;  
+}
+`
 
 export const InfoRow = styled.div`
 display:flex;

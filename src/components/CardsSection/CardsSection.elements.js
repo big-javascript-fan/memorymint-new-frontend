@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { devices } from "../constant";
-import img from '../../assets/img/image6.png';
+import img from '../../assets/img/Bgimage2.png';
 export const Container = styled.div`
  
   height: 1080px;
