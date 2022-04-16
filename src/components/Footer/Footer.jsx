@@ -9,14 +9,14 @@ import {
 const Footer = () => {
   const scrollTo = (elem) => {
     const anchor = document.querySelector(`#${elem}`);
-    anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  }
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <FooterContainer id="footer">
       <Logo>TheMemoryMint</Logo>
       <CopyRightSec>All rights reserved 2022. Visible Things</CopyRightSec>
       <FooterMenu onClick={() => scrollTo("header")}>
-        Top{' '}<MoveTop />
+        Top <MoveTop style={{ marginLeft: "10px" }} />
       </FooterMenu>
     </FooterContainer>
   );

@@ -8,24 +8,39 @@ import {
   Tag,
   PriceContainer,
   SaleContainer,
+  Overlay,
+  OverlayContainer,
+  ImgContainer,
+  Button,
 } from "./ProductCard.elements";
 import ProductImg from "../../assets/img/product-img.png";
 import LoveIcon from "../../components/common/icons/LoveIcon";
 import EthIcon from "../../components/common/icons/EthIcon";
 const ProductCard = () => {
-  const data = [1, 2,3,4,5,6];
+  const data = [1, 2, 3, 4, 5, 6];
   return (
     <>
       {data.map((d) => {
         return (
           <Container>
-            <Img src={ProductImg} />
+            <ImgContainer>
+              <Img src={ProductImg} />
+              <OverlayContainer>
+                <Overlay>
+                  <Button onClick={() =>{
+                    //TODO:
+                  }}>Pre-sale Now Available</Button>
+                </Overlay>
+              </OverlayContainer>
+            </ImgContainer>
             <TitleIconContainer>
               <Title>Playing With My Hair..</Title>
               <LoveIcon />
             </TitleIconContainer>
             <PriceDetailContainer>
-              <SaleContainer>
+              <SaleContainer
+                style={{ borderRight: "1px solid gray", paddingRight: "20px" }}
+              >
                 <Tag>Pre-Sale</Tag>
                 <PriceContainer>
                   <EthIcon style={{ padding: "7px" }} />
@@ -34,7 +49,7 @@ const ProductCard = () => {
                 </PriceContainer>
               </SaleContainer>
 
-              <SaleContainer>
+              <SaleContainer style={{ paddingLeft: "20px" }}>
                 <Tag>General-Sale</Tag>
                 <PriceContainer>
                   <EthIcon style={{ padding: "7px" }} />

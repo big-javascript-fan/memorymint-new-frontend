@@ -7,12 +7,21 @@ export const HeaderContainer = styled.div`
     background-color: #111111;
     box-shadow: inset 38.1388px -38.1388px 38.1388px rgba(149, 149, 149, 0.01), inset -38.1388px 38.1388px 38.1388px rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(25.1716px);
+    opacity:0.95;
     height:100px;
+    z-index:1;
 `
 
 export const Logo = styled.div`
 font-size:32px;
+position: relative;
+animation: mymove 1s infinite;
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 100px;}
+}
 `
+
 
 export const HomeMenu= styled.div`
   width: 35px;
