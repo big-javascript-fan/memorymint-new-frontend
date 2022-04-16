@@ -9,14 +9,16 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;  
-  }
 }
 `;
+
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 
 export const GradientContainer = styled.div`
   display: flex;
@@ -29,13 +31,15 @@ export const GradientContainer = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;  
-  }
+
 `;
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 
 export const SubContainer = styled.div`
   display: flex;

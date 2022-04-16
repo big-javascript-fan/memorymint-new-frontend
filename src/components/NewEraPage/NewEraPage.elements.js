@@ -10,15 +10,17 @@ background-size: cover;
 @media ${devices.laptopM} {
   height: 800px;
 }
-@media ${devices.laptop} {
-  height: 700px;
-}
-@media ${devices.mobileL} {
-  height: 500px;
-}
-}
+
 }
 `;
+
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
@@ -33,13 +35,14 @@ export const GradientContainer = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
 `;
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 
 export const InfoRow = styled.div`
   display: flex;

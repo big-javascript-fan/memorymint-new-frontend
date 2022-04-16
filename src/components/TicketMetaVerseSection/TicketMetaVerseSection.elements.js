@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { devices } from "../constant";
-import img from '../../assets/img/Bgimage3.png';
+import img from "../../assets/img/Bgimage3.png";
 
 export const Container = styled.div`
 
@@ -11,32 +11,40 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
+
 }
 `;
 
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
+
 export const GradientContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-padding:0px 180px 0px 200px;
-height: 100%;
-background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
-@media ${devices.laptopM} {
-  height: 800px;
-}
-@media ${devices.laptop} {
-  height: 700px;
-}
-@media ${devices.mobileL} {
-  height: 500px;  
-}
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 180px 0px 200px;
+  height: 100%;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.73) 0%,
+    #000000 100%
+  );
+  @media ${devices.laptopM} {
+    height: 800px;
+  }
+`;
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 
 export const InfoRow = styled.div`
   display: flex;
@@ -101,18 +109,15 @@ export const Button = styled.button`
     padding: 10px 20px;
     margin-top: 40px;
     font-size: 18px;
-
   }
   @media ${devices.laptop} {
     padding: 5px 10px;
     margin-top: 30px;
     font-size: 14px;
-
   }
   @media ${devices.mobileL} {
     margin-top: 20px;
     font-size: 12px;
-
   }
 `;
 
@@ -123,7 +128,7 @@ export const ImgWarpper = styled.div`
 export const Img = styled.img`
   height: 581px;
   width: 705px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 
   @media ${devices.laptopM} {
     width: 500px;

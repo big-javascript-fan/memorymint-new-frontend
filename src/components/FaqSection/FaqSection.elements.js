@@ -12,15 +12,16 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
+
 }
 `;
-
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
@@ -34,13 +35,15 @@ export const GradientContainer = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
 `;
+
+// @media ${devices.laptop} {
+//   height: 700px;
+// }
+// @media ${devices.mobileL} {
+//   height: 500px;
+// }
+// }
 export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
@@ -82,12 +85,12 @@ export const QuestionContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
+`;
 export const Questions = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  
+
   @media ${devices.laptopM} {
     font-size: 18px;
   }
@@ -116,18 +119,17 @@ export const QAContainer = styled.div`
 `;
 export const IconContainer = styled.div`
   cursor: pointer;
-`
+`;
 export const Answer = styled.div`
-  display: ${props => props.display ? "block" : "none"};
+  display: ${(props) => (props.display ? "block" : "none")};
   font-weight: 400;
-font-size: 18px;
-line-height: 31px;
-/* identical to box height, or 172% */
+  font-size: 18px;
+  line-height: 31px;
+  /* identical to box height, or 172% */
 
+  color: #ffffff;
 
-color: #FFFFFF;
-
-  margin-left:10px; 
+  margin-left: 10px;
   @media ${devices.laptopM} {
     font-size: 15px;
   }

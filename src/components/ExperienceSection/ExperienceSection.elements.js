@@ -11,16 +11,18 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-  @media ${devices.laptop} {
-    height: 700px;
-    padding:0px 50px 0px 50px;
-  }
-  @media ${devices.mobileL} {
-    padding:0px 10px 0px 10px;
-    height: 500px;  
-  }
 }
+
 `;
+
+// @media ${devices.laptop} {
+//   height: 700px;
+//   padding:0px 50px 0px 50px;
+// }
+// @media ${devices.mobileL} {
+//   padding:0px 10px 0px 10px;
+//   height: 500px;  
+// }
 
 export const Card = styled.div`
   height: 320px;

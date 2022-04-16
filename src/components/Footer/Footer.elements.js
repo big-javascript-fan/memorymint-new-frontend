@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../constant";
 export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,11 @@ export const FooterContainer = styled.div`
     inset -38.1388px 38.1388px 38.1388px rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(25.1716px);
   height: 100px;
+  @media ${devices.laptop} {
+    padding: 20px 50px;
+}
+
+}
 `;
 
 export const Logo = styled.div`
