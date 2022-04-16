@@ -8,6 +8,14 @@ import RoadMapSec from "../components/RoadMapSec";
 import FaqSection from "../components/FaqSection";
 import ReachOutSection from "../components/ReachOutSection";
 
+const cardData ={
+  title: '1. PRESENT MOMENT',
+  subtitles: [
+    'Welcome! Bask in present-moment awareness!',
+    'Pre-Sale of our first collection begins on February 27, 2022, exclusively from our website.',
+    'Pre-Sale of our first collection begins on February 27, 2022, exclusively from our website.' 
+  ]
+}
 const Home = () => {
   return (
     <>
@@ -17,7 +25,7 @@ const Home = () => {
       <OtherThanNFTCardSection />
       <NewEraPage />
       <TicketMetaVerseSection />
-      <RoadMapSec />
+      <RoadMapSec title="Road Map" cardData={cardData}  />
       <FaqSection />
       <ReachOutSection />
     </>

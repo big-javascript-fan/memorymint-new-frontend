@@ -17,11 +17,7 @@ import ProductImg from "../../assets/img/product-img.png";
 import LoveIcon from "../../components/common/icons/LoveIcon";
 import EthIcon from "../../components/common/icons/EthIcon";
 const ProductCard = () => {
-  const data = [1, 2, 3, 4, 5, 6];
   return (
-    <>
-      {data.map((d) => {
-        return (
           <Container>
             <ImgContainer>
               <Img src={ProductImg} />
@@ -59,9 +55,6 @@ const ProductCard = () => {
               </SaleContainer>
             </PriceDetailContainer>
           </Container>
-        );
-      })}
-    </>
   );
 };
 

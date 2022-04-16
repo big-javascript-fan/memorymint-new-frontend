@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTProRegular/AvenirNextLTProRegular.otf') format('truetype');
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir Next LT Pro';
+    font-weight: 400;
+}
+svg {
+    cursor: pointer;
+}

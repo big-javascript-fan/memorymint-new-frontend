@@ -12,20 +12,22 @@ import {
 } from "./RoadMapSec.elements";
 import img from "../../assets/img/roadmap.png";
 
-const RoadMapSec = () => {
+const RoadMapSec = ({title, cardData}) => {
   return (
     <Container>
       <GradientContainer>
-        <Heading>Road Map</Heading>
+        <Heading>{title}</Heading>
         <ImgWarpper>
           <Img src={img} />
         </ImgWarpper>
         <TextWrapper>
-          <Title>1. PRESENT MOMENT</Title>
+          <Title>{cardData.title}</Title>
           <ListContainer>
-            <List>Welcome! Bask in present-moment awareness!</List>
-            <List>Pre-Sale of our first collection begins on February 27, 2022, exclusively from our website.</List>
-            <List>Pre-Sale of our first collection begins on February 27, 2022, exclusively from our website.</List>
+            {
+              cardData.subtitles.map((text) => {
+                return <List>{text}</List>
+              })
+            }
           </ListContainer>
         </TextWrapper>
       </GradientContainer>

@@ -67,7 +67,6 @@ export const Img = styled.img`
 `;
 
 export const TextWrapper = styled.div`
-  height: 301px;
   width: 574px;
   border-radius: 10px;
   padding: 30px;
@@ -76,7 +75,6 @@ export const TextWrapper = styled.div`
   @media ${devices.laptopM} {
     height: 200px;
     width: 100%;
-
   }
   @media ${devices.laptop} {
     width: 100%;
