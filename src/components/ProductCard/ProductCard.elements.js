@@ -3,7 +3,7 @@ import { devices } from "../constant";
 
 export const Container = styled.div`
 background-color:#323232;
-max-width: 300px;
+max-width: 340px;
 max-height: 100%;
 padding: 15px;
 margin: 10px;
