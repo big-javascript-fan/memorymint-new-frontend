@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { devices } from "../constant";
-import img from '../../assets/img/Bgimage2.png';
+import img from "../../assets/img/Bgimage2.png";
 export const Container = styled.div`
   
   background-image:url(${img});
@@ -9,6 +9,13 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
+  @media ${devices.laptop} {
+    height: 700px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;
+  }
+
 }
 `;
 
@@ -24,14 +31,21 @@ export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:0px 180px 0px 200px;
-  height: 1080px;
+  padding: 0px 180px 0px 200px;
   flex-direction: column;
-  background:radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.73) 0%, #000000 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0.73) 0%,
+    #000000 100%
+  );
   @media ${devices.laptopM} {
-    height: 800px;
   }
-
+  @media ${devices.laptop} {
+    padding: 0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    padding: 0px 10px 0px 10px;
+  }
 `;
 // @media ${devices.laptop} {
 //   height: 700px;
@@ -48,23 +62,35 @@ export const SubContainer = styled.div`
 `;
 
 export const Card = styled.div`
-height: 258px;
-width: 487px;
-border-radius: 10px;
-display: flex;
-margin: 10px 10px;
-padding:0px 30px;
-background: rgba(255, 255, 255, 0.041);
-box-shadow: inset 26.4526px -26.4526px 26.4526px rgba(194, 194, 194, 0.041), inset -26.4526px 26.4526px 26.4526px rgba(255, 255, 255, 0.041);
-backdrop-filter: blur(92.0549px);
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  height: 258px;
+  width: 487px;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px 10px;
+  padding: 0px 30px;
+  background: rgba(255, 255, 255, 0.041);
+  box-shadow: inset 26.4526px -26.4526px 26.4526px rgba(194, 194, 194, 0.041),
+    inset -26.4526px 26.4526px 26.4526px rgba(255, 255, 255, 0.041);
+  backdrop-filter: blur(92.0549px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-@media ${devices.laptopM} {
-  height: 200px;
-}
-}
+  @media ${devices.laptopM} {
+    height: 200px;
+    width: 400px;
+    padding: 0px 25px;
+  }
+  @media ${devices.laptop} {
+    height: 180px;
+    width: 380px;
+    padding: 0px 20px;
+  }
+  @media ${devices.mobileL} {
+    height: 150px;
+    width: 350px;
+    padding: 0px 10px;
+  }
 `;
 
 export const IconSec = styled.p`
@@ -74,10 +100,27 @@ export const IconSec = styled.p`
 export const TitleSec = styled.h1`
 font-size:42px;
 margin-bottom:100px;
+@media ${devices.laptopM} {
+  font-size:32px;
+margin-bottom:60px;
+}
+@media ${devices.laptop} {
+  font-size:22px;
+  margin-bottom:40px;
+@media ${devices.mobileL} {
+  font-size:16px;
+  margin-bottom:20px;
 }
 `;
 export const DescriptionSec = styled.p`
-text-align: center;
-font-size:18px
-}
+  text-align: center;
+  font-size: 18px @media ${devices.laptopM} {
+    font-size: 16px;
+  }
+  @media ${devices.laptop} {
+    font-size: 14px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+  }
 `;

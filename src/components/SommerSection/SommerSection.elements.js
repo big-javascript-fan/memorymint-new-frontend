@@ -9,7 +9,15 @@ export const Container = styled.div`
   background-size: cover;
   display: flex;
   @media ${devices.laptopM} {
-    padding:50px;
+    height: 800px;
+  }
+  @media ${devices.laptop} {
+    padding:0px 50px 0px 50px;
+    height:600px;
+  }
+  @media ${devices.mobileL} {
+    padding:0px 10px 0px 10px;
+    height: 500px;
   }
 }
 `;
@@ -18,12 +26,23 @@ export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 `;
 export const TopTitle = styled.div`
   background: rgba(255, 255, 255, 0.107);
   backdrop-filter: blur(16.5107px);
   border-radius: 40px;
   padding: 12px 30px;
+  @media ${devices.laptopM} {
+    padding: 12px 30px;
+  }
+  @media ${devices.laptop} {
+    padding: 8px 22px;
+
+  }
+  @media ${devices.mobileL} {
+    padding: 4px 16px;
+  }
 `;
 
 export const InfoColumn = styled.div`
@@ -38,6 +57,14 @@ export const TextWrapper = styled.div`
   @media ${devices.laptopM} {
     padding: 5px 0px 20px 0px;
   }
+  @media ${devices.laptop} {
+    padding: 3px 0px 15px 0px;
+
+  }
+  @media ${devices.mobileL} {
+    padding: 2px 0px 10px 0px;
+  }
+
 `;
 
 export const Heading = styled.div`
@@ -102,9 +129,13 @@ export const AboutPara = styled.div`
   }
   @media ${devices.laptop} {
     font-size: 16px;
+    line-height: 20px;
+
   }
   @media ${devices.mobileL} {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: unset;
+
   }
 `;
 
@@ -125,9 +156,17 @@ export const ImgContainer = styled.div`
 `;
 export const Img = styled.img`
   margin: 10px;
+  @media ${devices.laptopL} {
+    width: 250px !important;
+    height: 350px !important;
+  }
   @media ${devices.laptopM} {
     width: 150px !important;
     height: 250px !important;
+  }
+  @media ${devices.mobileL} {
+    width: 70px !important;
+    height: 90px !important;
   }
 `;
 export const Scroll = styled.div`
@@ -146,5 +185,9 @@ export const SocialContainer = styled.div`
   transform: translate(-50%, -50%);
   @media ${devices.laptopM} {
     right: 0px;
+  }
+  @media ${devices.mobileL} {
+  right: 0px;
+  top:48%;
   }
 `;

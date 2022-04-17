@@ -62,13 +62,13 @@ export const Subtitle = styled.div`
   /* identical to box height */
   color: #ffffff;
   @media ${devices.laptopM} {
-    font-size: 33px;
-  }
-  @media ${devices.laptop} {
     font-size: 28px;
   }
+  @media ${devices.laptop} {
+    font-size: 18px;
+  }
   @media ${devices.mobileL} {
-    font-size: 23px;
+    font-size: 14px;
   }
 `;
 export const Button = styled.button`
@@ -88,14 +88,20 @@ export const Button = styled.button`
   @media ${devices.laptopM} {
     margin-top: 50px;
     font-size: 18px;
+    padding: 15px 20px;
+
   }
   @media ${devices.laptop} {
     margin-top: 30px;
     font-size: 14px;
+    padding: 10px 15px;
+
   }
   @media ${devices.mobileL} {
     margin-top: 20px;
     font-size: 12px;
+    padding: 5px 10px;
+
   }
 `;
 
@@ -115,7 +121,7 @@ export const Img = styled.img`
     height: 700px;
   }
   @media ${devices.mobileL} {
-    width: 350px;
+    width: 300px;
     height: 500px;
   }
 `;
@@ -126,7 +132,7 @@ export const Scroll = styled.div`
 `;
 export const SocialContainer = styled.div`
   position: absolute;
-  right: 0px;
+  right: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
 `;

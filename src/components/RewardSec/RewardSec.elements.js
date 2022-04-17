@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../constant";
 
 export const Container = styled.div`
-height: 900px;
+height: 800px;
 background-repeat: no-repeat;
 background-size: cover;
 display: flex;
@@ -10,6 +10,18 @@ align-items: center;
 justify-content: center;
 background-color: black;
 padding:0px 180px 0px 200px;
+@media ${devices.laptopM} {
+  height: 800px;
+}
+@media ${devices.laptop} {
+  padding:0px 50px 0px 50px;
+  height: 700px;
+
+}
+@media ${devices.mobileL} {
+  padding:0px 10px 0px 10px;
+  height: 500px;
+}
 
 }
 `;
@@ -42,19 +54,38 @@ export const Heading = styled.h1`
     font-size: 32px;
   }
   @media ${devices.laptop} {
-    font-size: 22px;
+    font-size: 18px;
   }
   @media ${devices.mobileL} {
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 export const Subtitle = styled.p`
   font-size: 28px;
   font-weight: 600;
+  @media ${devices.laptopM} {
+    font-size: 22px;
+  }
+  @media ${devices.laptop} {
+    font-size: 18px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 14px;
+  }
 `;
 export const Paragraph = styled.p`
   font-size: 14px;
   font-weight: 500;
+  margin-top: 10px;
+  @media ${devices.laptopM} {
+    font-size: 14px;
+  }
+  @media ${devices.laptop} {
+    font-size: 12px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+  }
 `;
 
 export const ImgWarpper = styled.div`

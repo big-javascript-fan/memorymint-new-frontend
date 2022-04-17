@@ -9,13 +9,18 @@ background-color:#010101;
 flex-direction: column;
 justify-content: center;
   @media ${devices.laptopM} {
-    height: 800px;
+    height: 600px;
+    padding:0px 50px 0px 50px;
   }
   @media ${devices.laptop} {
-    height: 700px;
+    height: 500px;
+    padding:0px 50px 0px 50px;
+
   }
   @media ${devices.mobileL} {
     height: 500px;
+    padding:0px 10px 0px 10px;
+
   }
 }
 `;
@@ -24,6 +29,16 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom:60px;
+  @media ${devices.laptopM} {
+    padding-bottom:50px;
+  }
+  @media ${devices.laptop} {
+    padding-bottom:30px;
+  }
+  @media ${devices.mobileL} {
+    padding-bottom:10px;
+  }
+  
 `;
 export const Heading = styled.div`
   font-style: normal;
@@ -37,7 +52,7 @@ export const Heading = styled.div`
     font-size: 22px;
   }
   @media ${devices.mobileL} {
-    font-size: 14px;
+    font-size: 22px;
   }
 `;
 

@@ -11,6 +11,14 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
+  @media ${devices.laptop} {
+    height: 700px;
+    padding:0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    padding:0px 10px 0px 10px;
+    height: 500px;
+  }
 }
 
 `;
@@ -35,6 +43,18 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media ${devices.laptopM} {
+    height: 300px;
+    width: 1217px;
+  }
+  @media ${devices.laptop} {
+    height: 250px;
+    width: 817px;
+  }
+  @media ${devices.mobileL} {
+    height: 180px;
+    width: 517px;
+  }
 }
 `;
 
@@ -45,6 +65,19 @@ export const TitleSec = styled.h1`
   line-height: 50px;
   text-align: center;
   text-transform: capitalize;
+
+  @media ${devices.laptopM} {
+    font-size: 35px;
+
+  }
+  @media ${devices.laptop} {
+    font-size: 22px;
+
+  }
+  @media ${devices.mobileL} {
+    font-size: 18px;
+
+  }
 `;
 export const Button = styled.button`
   font-weight: 500;
@@ -59,4 +92,21 @@ export const Button = styled.button`
   :hover {
     transform:scale(1.1, 1.1);
   }
+
+  @media ${devices.laptopM} {
+    font-size: 18px;
+
+  }
+  @media ${devices.laptop} {
+    font-size: 14px;
+    padding: 15px 20px;
+
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+    padding: 10px 15px;
+
+
+  }
+  
 `;

@@ -49,11 +49,10 @@ export const Overlay = styled.div`
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  width:100%;
-
+  width: 100%;
 `;
 export const ImgContainer = styled.div`
-position: relative;
+  position: relative;
   &:hover ${OverlayContainer} {
     height: 100%;
   }
@@ -81,6 +80,15 @@ export const PriceDetailContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  @media ${devices.laptopM} {
+    margin-top: 20px;
+  }
+  @media ${devices.laptop} {
+    margin-top: 10px;
+  }
+  @media ${devices.mobileL} {
+    margin-top: 5px;
+  }
 `;
 export const SaleContainer = styled.div`
   display: flex;
@@ -100,7 +108,6 @@ export const PriceContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-
 export const Button = styled.button`
   font-weight: 500;
   font-size: 18px;
@@ -110,7 +117,7 @@ export const Button = styled.button`
   border-radius: 8px;
   border: none;
   padding: 15px 10px;
-  cursor:pointer;
+  cursor: pointer;
   @media ${devices.laptopM} {
     font-size: 16px;
   }

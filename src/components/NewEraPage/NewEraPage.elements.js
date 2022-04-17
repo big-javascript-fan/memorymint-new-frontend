@@ -10,17 +10,16 @@ background-size: cover;
 @media ${devices.laptopM} {
   height: 800px;
 }
-
+@media ${devices.laptop} {
+  height: 700px;
+}
+@media ${devices.mobileL} {
+  height: 500px;
+}
+}
 }
 `;
 
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
-// }
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
@@ -33,16 +32,15 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
-    height: 800px;
   }
+  @media ${devices.laptop} {
+    padding:0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    padding:0px 10px 0px 10px;
+  }
+}
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
-// }
 
 export const InfoRow = styled.div`
   display: flex;
@@ -51,7 +49,6 @@ export const InfoRow = styled.div`
 `;
 
 export const InfoColumn = styled.div`
-  margin-bottom: 90px;
   padding-right: 15px;
   padding-left: 15px;
   flex: 1;
@@ -73,17 +70,21 @@ export const Heading = styled.h1`
   }
   @media ${devices.laptop} {
     font-size: 22px;
-
   }
   @media ${devices.mobileL} {
     font-size: 18px;
-
   }
 `;
 export const Subtitle = styled.p`
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
+  @media ${devices.laptop} {
+    font-size: 12px;
+  }
+  @media ${devices.mobileL} {
+    font-size: 12px;
+  }
 `;
 
 export const ImgWarpper = styled.div`

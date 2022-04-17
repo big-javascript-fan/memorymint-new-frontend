@@ -11,7 +11,7 @@ import ProductsListPage from "./Pages/ProductsListPage"
 
 function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyle />
       <Header />
       <BrowserRouter>
@@ -22,7 +22,7 @@ function App() {
       </BrowserRouter>
 
       <Footer />
-    </div>
+    </>
   );
 }
 

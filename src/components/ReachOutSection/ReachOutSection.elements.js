@@ -6,17 +6,9 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  @media ${devices.laptopM} {
-    height: 800px;
-  }
 }
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
+
 // }
 export const GradientContainer = styled.div`
   display: flex;
@@ -32,14 +24,16 @@ export const GradientContainer = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
+  @media ${devices.laptop} {
+    height: 700px;
+    padding: 0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;
+    padding: 0px 10px 0px 10px;
+  }
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
-// }
+
 export const TextWrapper = styled.div``;
 
 export const Heading = styled.div`
@@ -50,6 +44,15 @@ export const Heading = styled.div`
   @media ${devices.laptopM} {
     font-size: 32px;
     padding-bottom: 50px;
+
+    @media ${devices.laptop} {
+      font-size: 22px;
+      padding-bottom: 30px;
+    }
+    @media ${devices.mobileL} {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
   }
 `;
 
@@ -71,6 +74,16 @@ export const Input = styled.input`
   height: 31px;
   color: #fffff;
   padding-bottom: 10px;
+  @media ${devices.laptopM} {
+    width: 645px;
+
+    @media ${devices.laptop} {
+      width: 545px;
+    }
+    @media ${devices.mobileL} {
+      width: 345px;
+    }
+  }
 `;
 export const TextArea = styled.textarea`
   background: transparent;
@@ -93,11 +106,17 @@ export const Button = styled.button`
   float: right;
   @media ${devices.laptopM} {
     font-size: 18px;
+    padding: 15px 50px;
+
   }
   @media ${devices.laptop} {
     font-size: 14px;
+    padding: 10px 40px;
+
   }
   @media ${devices.mobileL} {
     font-size: 12px;
+    padding: 10px 20px;
+
   }
 `;

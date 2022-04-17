@@ -10,15 +10,16 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
+  @media ${devices.laptop} {
+  height: 700px;
+}
+@media ${devices.mobileL} {
+  height: 500px;
+}
+}
 }
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
-// }
+
 
 export const GradientContainer = styled.div`
   display: flex;
@@ -33,7 +34,12 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
-    height: 800px;
+  }
+  @media ${devices.laptop} {
+    padding: 0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    padding: 0px 10px 0px 10px;
   }
 `;
 // @media ${devices.laptop} {
@@ -89,6 +95,16 @@ export const Title = styled.h1`
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
+
+@media ${devices.laptopM} {
+  font-size: 24px;
+}
+@media ${devices.laptop} {
+  font-size: 18px;
+}
+@media ${devices.mobileL} {
+  font-size: 14px;
+}
 `;
 
 export const ListContainer = styled.ul`

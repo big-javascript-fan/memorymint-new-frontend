@@ -8,8 +8,14 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   @media ${devices.laptopM} {
-      height: 800px;
-    }
+    height: 800px;
+  }
+  @media ${devices.laptop} {
+    height: 700px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;
+  }
 }
 `;
 
@@ -17,7 +23,7 @@ export const Container = styled.div`
 //   height: 700px;
 // }
 // @media ${devices.mobileL} {
-//   height: 500px;  
+//   height: 500px;
 // }
 export const GradientContainer = styled.div`
   display: flex;
@@ -31,20 +37,19 @@ export const GradientContainer = styled.div`
     rgba(0, 0, 0, 0.73) 0%,
     #000000 100%
   );
-  @media ${devices.laptopM} {
-    height: 800px;
+  @media ${devices.laptop} {
+    height: 700px;
+    padding: 0px 50px 0px 50px;
   }
-
+  @media ${devices.mobileL} {
+    height: 500px;
+    padding: 0px 10px 0px 10px;
+  }
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
+
 export const Card = styled.div`
   background: rgba(255, 255, 255, 0.041);
-  height: 356px;
+  height: 300px;
   width: 487px;
   border-radius: 10px;
   margin: 0px 10px;
@@ -58,16 +63,19 @@ export const Card = styled.div`
     height: auto;
     width: auto;
     margin: 10px;
+
   }
   @media ${devices.laptop} {
     height: auto;
     width: auto;
+
   }
 }
 `;
 
 export const TitleSec = styled.h1`
 font-size:32px;
+margin-bottom:30px;
 @media ${devices.laptop} {
   font-size:18px
 }

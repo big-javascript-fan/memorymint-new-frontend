@@ -3,13 +3,18 @@ import { devices } from "../constant";
 import img from "../../assets/img/Bgimage2.png";
 
 export const Container = styled.div`
-
   height: 1080px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${img});
   @media ${devices.laptopM} {
     height: 800px;
+  }
+  @media ${devices.laptop} {
+    height: 600px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;
   }
 
 }
@@ -36,6 +41,12 @@ export const GradientContainer = styled.div`
   );
   @media ${devices.laptopM} {
     height: 800px;
+  }
+  @media ${devices.laptop} {
+    height: 600px;
+  }
+  @media ${devices.mobileL} {
+    height: 500px;
   }
 `;
 // @media ${devices.laptop} {

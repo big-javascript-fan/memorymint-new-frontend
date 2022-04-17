@@ -12,16 +12,16 @@ export const Container = styled.div`
   @media ${devices.laptopM} {
     height: 800px;
   }
-
+  @media ${devices.laptop} {
+      height: 700px;
+    }
+    @media ${devices.mobileL} {
+      height: 500px;
+    }
+    
 }
 `;
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
-// }
+
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
@@ -33,7 +33,12 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
-    height: 800px;
+  }
+  @media ${devices.laptop} {
+    padding: 0px 50px 0px 50px;
+  }
+  @media ${devices.mobileL} {
+    padding: 0px 10px 0px 10px;
   }
 `;
 
@@ -62,7 +67,7 @@ export const InfoColumn = styled.div`
 
 export const TextWrapper = styled.div`
   @media ${devices.laptopM} {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -73,12 +78,18 @@ export const Heading = styled.div`
   padding-bottom: 100px;
   @media ${devices.laptopM} {
     font-size: 32px;
+    padding-bottom: 80px;
+
   }
   @media ${devices.laptop} {
     font-size: 24px;
+    padding-bottom: 50px;
+
   }
   @media ${devices.mobileL} {
     font-size: 18px;
+    padding-bottom: 20px;
+
   }
 `;
 export const QuestionContainer = styled.div`
@@ -109,9 +120,13 @@ export const QAContainer = styled.div`
   border-bottom: 1px solid gray;
   @media ${devices.laptopM} {
     font-size: 18px;
+    padding: 20px 0px 10px 0px;
+
   }
   @media ${devices.laptop} {
     font-size: 14px;
+    padding: 10px 0px 5px 0px;
+
   }
   @media ${devices.mobileL} {
     font-size: 12px;
