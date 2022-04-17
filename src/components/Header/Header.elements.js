@@ -27,13 +27,27 @@ export const Logo = styled.div`
   font-size: 32px;
   position: relative;
   animation: mymove 1s infinite;
+  animation-duration: 3s;  
+  animation-delay: 1s;
   @keyframes mymove {
-    from {
-      left: 0px;
+    0% {
+      color: #fffff;
+      left: 0%;
+      top: 0px;
     }
-    to {
-      left: 100px;
+    20% {
+      color: #fffff;
+      left: 10%;
+      top: 0px;
     }
+
+    25% {
+      color: #0000;
+      left: 0%;
+      top: 0px;
+    }
+
+
   }
   @media ${devices.laptopM} {
     font-size: 28px;
