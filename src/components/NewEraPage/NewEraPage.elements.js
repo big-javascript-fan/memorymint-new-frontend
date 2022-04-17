@@ -32,6 +32,7 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
+    padding:0px 50px 0px 50px;
   }
   @media ${devices.laptop} {
     padding:0px 50px 0px 50px;

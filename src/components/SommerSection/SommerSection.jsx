@@ -55,13 +55,11 @@ const SommerSection = () => {
           <ImgContainer>
             <Img
               src={Img1}
-              style={{ height: "404px", width: "257px", borderRadius: "180px" }}
             />
           </ImgContainer>
           <ImgContainer>
             <Img
               src={Img2}
-              style={{ height: "213px", width: "333px", borderRadius: "180px" }}
             />
           </ImgContainer>
         </ImgWarpper>
@@ -69,7 +67,6 @@ const SommerSection = () => {
           <ImgContainer>
             <Img
               src={Img3}
-              style={{ height: "593px", width: "338px", borderRadius: "180px" }}
             />
           </ImgContainer>
         </ImgWarpper>

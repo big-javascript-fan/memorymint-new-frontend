@@ -4,7 +4,7 @@ import { HeaderContainer, Logo, HomeMenu } from "./Header.elements";
 
 const Header = () => {
   return (
-    <HeaderContainer id ="header">
+    <HeaderContainer id="header">
       <Logo>TheMemoryMint</Logo>
       <HomeMenu>
         <HomeIcon />

@@ -21,6 +21,7 @@ padding:0px 180px 0px 200px;
 @media ${devices.mobileL} {
   padding:0px 10px 0px 10px;
   height: 500px;
+  flex-direction: column;
 }
 
 }
@@ -30,15 +31,13 @@ export const InfoRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 `;
 
 export const InfoColumn = styled.div`
   margin-bottom: 90px;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
 `;
 
 export const TextWrapper = styled.div`
@@ -90,6 +89,8 @@ export const Paragraph = styled.p`
 
 export const ImgWarpper = styled.div`
   display: flex;
+
+  margin: 0px 20px;
   img {
     width: 100%;
     transition: 0.5s all ease-in-out;
@@ -98,22 +99,17 @@ export const ImgWarpper = styled.div`
     transform: scale(1.1);
   }
 `;
+export const ImgContainer = styled.div`
+  
+`;
 
 export const Img = styled.img`
   padding-right: 0;
   border: 0;
   max-width: 100%;
   max-height: 500px;
-  @media ${devices.laptopM} {
-    width: 300px !important;
-    height: 300px !important;
-  }
-  @media ${devices.laptop} {
-    width: 200px !important;
-    height: 200px !important;
-  }
+  margin-bottom: 30px;
   @media ${devices.mobileL} {
-    width: 100px !important;
-    height: 100px !important;
+    margin-bottom: 'unset';
   }
 `;

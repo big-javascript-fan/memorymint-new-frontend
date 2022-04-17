@@ -20,6 +20,11 @@ export const Container = styled.div`
     padding:0px 10px 0px 10px;
     height: 500px;
   }
+  
+  @media ${devices.mobileM} {
+    
+    height: 400px;
+  }
 }
 `;
 
@@ -52,6 +57,9 @@ export const Heading = styled.div`
   @media ${devices.mobileL} {
     font-size: 33px;
   }
+  @media ${devices.mobileM} {
+    font-size: 25px;
+  }
 `;
 export const Subtitle = styled.div`
   margin-top: 10px;
@@ -69,6 +77,9 @@ export const Subtitle = styled.div`
   }
   @media ${devices.mobileL} {
     font-size: 14px;
+  }
+  @media ${devices.mobileM} {
+    font-size: 12px;
   }
 `;
 export const Button = styled.button`
@@ -117,12 +128,16 @@ export const Img = styled.img`
     height: 800px;
   }
   @media ${devices.laptop} {
-    width: 450px;
-    height: 700px;
+    width: 300px;
+    height: 500px;
   }
   @media ${devices.mobileL} {
     width: 300px;
     height: 500px;
+  }
+  @media ${devices.mobileM} {
+    width: 200px;
+    height: 400px;
   }
 `;
 export const Scroll = styled.div`

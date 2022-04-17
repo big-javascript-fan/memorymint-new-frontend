@@ -2,20 +2,11 @@ import styled from "styled-components";
 import { devices } from "../constant";
 import img from "../../assets/img/Bgimage2.png";
 export const Container = styled.div`
-  height: 1080px;
   background-color: #010101;
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  @media ${devices.laptopM} {
-    height: 800px;
-  }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
+  
 }
 `;
 
@@ -37,12 +28,11 @@ export const GradientContainer = styled.div`
     rgba(0, 0, 0, 0.73) 0%,
     #000000 100%
   );
+  
   @media ${devices.laptop} {
-    height: 700px;
     padding: 0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
-    height: 500px;
     padding: 0px 10px 0px 10px;
   }
 `;
@@ -76,6 +66,7 @@ export const Card = styled.div`
 export const TitleSec = styled.h1`
 font-size:32px;
 margin-bottom:30px;
+margin-top:30px;
 @media ${devices.laptop} {
   font-size:18px
 }

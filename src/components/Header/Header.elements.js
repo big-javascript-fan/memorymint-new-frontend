@@ -7,19 +7,18 @@ export const HeaderContainer = styled.div`
   align-items: center;
   background: rgba(17, 17, 17, 0.5);
   backdrop-filter: blur(5px);
-  height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
   @media ${devices.laptopM} {
-    padding: 50px;
+    padding: 10px 50px;
   }
   @media ${devices.laptop} {
-    padding: 20px;
+    padding: 10px 50px;
   }
   @media ${devices.mobileL} {
-    padding: 10px;
+    padding: 10px 50px;
   }
 `;
 

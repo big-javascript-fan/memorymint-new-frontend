@@ -23,6 +23,7 @@ export const GradientContainer = styled.div`
   );
   @media ${devices.laptopM} {
     height: 800px;
+    padding: 0px 50px 0px 50px;
   }
   @media ${devices.laptop} {
     height: 700px;
@@ -34,7 +35,9 @@ export const GradientContainer = styled.div`
   }
 `;
 
-export const TextWrapper = styled.div``;
+export const TextWrapper = styled.div`
+  width: 100%;
+`;
 
 export const Heading = styled.div`
   font-style: normal;
@@ -58,30 +61,29 @@ export const Heading = styled.div`
 
 export const InputsContainer = styled.div`
   display: flex;
+  width: 100%;
   @media ${devices.laptopM} {
     flex-wrap: wrap;
   }
 `;
 export const InputSubContainer = styled.div`
   border-bottom: 1px solid gray;
+  width: 100%;
   margin: 20px;
 `;
 export const Input = styled.input`
   background: transparent;
   border: 0px solid;
   outline: none;
-  width: 745px;
   height: 31px;
   color: #fffff;
   padding-bottom: 10px;
+  width: 100%;
   @media ${devices.laptopM} {
-    width: 645px;
 
     @media ${devices.laptop} {
-      width: 545px;
     }
     @media ${devices.mobileL} {
-      width: 345px;
     }
   }
 `;
@@ -102,21 +104,7 @@ export const Button = styled.button`
   background-color: #f94144;
   border-radius: 8px;
   border: none;
-  padding: 20px 60px;
+  padding: 12px 60px;
   float: right;
-  @media ${devices.laptopM} {
-    font-size: 18px;
-    padding: 15px 50px;
-
-  }
-  @media ${devices.laptop} {
-    font-size: 14px;
-    padding: 10px 40px;
-
-  }
-  @media ${devices.mobileL} {
-    font-size: 12px;
-    padding: 10px 20px;
-
-  }
+  
 `;

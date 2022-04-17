@@ -93,8 +93,8 @@ export const Card = styled.div`
   }
 `;
 
-export const IconSec = styled.p`
-
+export const IconSec = styled.div`
+  margin: 15px 0px;
 }
 `;
 export const TitleSec = styled.h1`

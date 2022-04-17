@@ -9,6 +9,7 @@ import {
   ImgWarpper,
   Img,
   Paragraph,
+  ImgContainer
 } from "./RewardSec.elements";
 import img4 from "../../assets/group-images/img4.png";
 import img5 from "../../assets/group-images/img5.png";
@@ -55,33 +56,33 @@ const RewardSec = () => {
                   <Paragraph>{d.p3}</Paragraph>
                 </TextWrapper>
               </InfoColumn>
-              <ImgWarpper>
-                <Img
-                  src={d.img1}
-                  style={{ width: "283px", height: "283px" }}
-                />
-              </ImgWarpper>
             </InfoRow>
             <InfoRow
               style={{
                 display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
                 marginLeft: "10px",
               }}
             >
-              <ImgWarpper style={{ marginBottom: "30px" }}>
-                <Img
-                  src={d.img2}
-                  style={{ width: "210px", height: "210px" }}
-                />
-              </ImgWarpper>
               <ImgWarpper>
                 <Img
-                  src={d.img3}
-                  style={{ width: "140px", height: "140px" }}
+                  src={d.img1}
+                  // style={{ width: "283px", height: "283px" }}
                 />
               </ImgWarpper>
+              <ImgContainer>
+                <ImgWarpper>
+                  <Img
+                    src={d.img2}
+                    // style={{ width: "210px", height: "210px" }}
+                    />
+                </ImgWarpper>
+                <ImgWarpper>
+                  <Img
+                    src={d.img3}
+                    // style={{ width: "140px", height: "140px" }}
+                    />
+                </ImgWarpper>
+              </ImgContainer>
             </InfoRow>
           </Container>
         );

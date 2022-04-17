@@ -5,20 +5,11 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding:0px 180px 0px 200px;
-  height: 1080px;
   background-color: #010101;
-  
   @media ${devices.laptopM} {
-    height: 800px;
-  }
-  @media ${devices.laptop} {
-    height: 700px;
     padding:0px 50px 0px 50px;
   }
-  @media ${devices.mobileL} {
-    padding:0px 10px 0px 10px;
-    height: 500px;
-  }
+  
 }
 
 `;
@@ -33,6 +24,8 @@ export const Container = styled.div`
 // }
 
 export const Card = styled.div`
+
+margin: 100px 0px;
   height: 320px;
   width: 1517px;
   border-radius: 30px;
@@ -87,8 +80,9 @@ export const Button = styled.button`
   background-color: #f94144;
   border-radius: 8px;
   border: none;
-  padding: 20px 30px;
+  padding: 12px 30px;
   cursor: pointer;
+  margin: 15px 0px;
   :hover {
     transform:scale(1.1, 1.1);
   }

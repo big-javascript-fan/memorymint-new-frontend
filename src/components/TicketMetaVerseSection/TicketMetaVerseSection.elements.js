@@ -40,7 +40,11 @@ export const GradientContainer = styled.div`
     rgba(0, 0, 0, 0.73) 0%,
     #000000 100%
   );
+  @media ${devices.laptopL} {
+    padding: 0px 50px 0px 50px;
+  }
   @media ${devices.laptopM} {
+    padding: 0px 50px 0px 50px;
   }
   @media ${devices.laptop} {
     padding: 0px 50px 0px 50px;
@@ -54,7 +58,7 @@ export const GradientContainer = styled.div`
 export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
-  @media ${devices.laptopM} {
+  @media ${devices.laptop} {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -131,21 +135,17 @@ export const ImgWarpper = styled.div`
   position: relative;
 `;
 export const Img = styled.img`
-  height: 581px;
   width: 705px;
   padding-bottom: 50px;
 
   @media ${devices.laptopM} {
     width: 500px;
-    height: 480px;
   }
   @media ${devices.laptop} {
     width: 400px;
-    height: 300px;
   }
   @media ${devices.mobileL} {
     width: 300px;
-    height: 200px;
   }
 `;
 export const ListContainer = styled.ul`

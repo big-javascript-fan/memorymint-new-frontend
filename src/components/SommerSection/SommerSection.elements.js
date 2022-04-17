@@ -153,7 +153,11 @@ export const ImgContainer = styled.div`
   &:hover img {
     transform: scale(1.1);
   }
+  @media ${devices.mobileL} {
+    display: flex;
+  }
 `;
+
 export const Img = styled.img`
   margin: 10px;
   @media ${devices.laptopL} {
@@ -163,6 +167,10 @@ export const Img = styled.img`
   @media ${devices.laptopM} {
     width: 150px !important;
     height: 250px !important;
+  }
+  @media ${devices.tabletL} {
+    width: 70px !important;
+    height: 90px !important;
   }
   @media ${devices.mobileL} {
     width: 70px !important;
@@ -188,6 +196,6 @@ export const SocialContainer = styled.div`
   }
   @media ${devices.mobileL} {
   right: 0px;
-  top:48%;
+  top:25%;
   }
 `;

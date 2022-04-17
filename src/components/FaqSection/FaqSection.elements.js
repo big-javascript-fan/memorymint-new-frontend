@@ -33,6 +33,7 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
+    padding: 0px 50px 0px 50px;
   }
   @media ${devices.laptop} {
     padding: 0px 50px 0px 50px;
@@ -52,10 +53,12 @@ export const GradientContainer = styled.div`
 export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
-  flex-wrap: wrap;
+
   @media ${devices.laptopM} {
     justify-content: center;
+  }
+  @media ${devices.tabletL} {
+    flex-direction: column;
   }
 `;
 
@@ -117,6 +120,7 @@ export const QAContainer = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
+  margin-right: 25px;
   border-bottom: 1px solid gray;
   @media ${devices.laptopM} {
     font-size: 18px;
@@ -175,19 +179,18 @@ export const ImgWarpper = styled.div`
   position: relative;
 `;
 export const Img = styled.img`
-  height: 618px;
   width: 439px;
+  @media ${devices.laptopL} {
+    width: 400px;
+  }
   @media ${devices.laptopM} {
-    width: 500px;
-    height: 300px;
+    width: 300px;
   }
   @media ${devices.laptop} {
-    width: 450px;
-    height: 200px;
+    width: 250px;
   }
   @media ${devices.mobileL} {
     width: 150px;
-    height: 100px;
   }
 `;
 export const ListContainer = styled.ul`
