@@ -42,6 +42,11 @@ export const TopTitle = styled.div`
   }
   @media ${devices.mobileL} {
     padding: 4px 16px;
+    font-size: 12px;
+  }
+  @media ${devices.mobileM} {
+    padding: 4px 16px;
+    font-size: 10px;
   }
 `;
 
@@ -50,6 +55,7 @@ export const InfoColumn = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 `;
 
 export const TextWrapper = styled.div`
@@ -81,6 +87,9 @@ export const Heading = styled.div`
   @media ${devices.mobileL} {
     font-size: 33px;
   }
+  @media ${devices.mobileM} {
+    font-size: 22px;
+  }
 `;
 export const Subtitle = styled.div`
   margin-top: 10px;
@@ -95,6 +104,9 @@ export const Subtitle = styled.div`
   }
   @media ${devices.mobileL} {
     font-size: 23px;
+  }
+  @media ${devices.mobileM} {
+    font-size: 16px;
   }
 `;
 export const AboutSection = styled.div`
@@ -118,24 +130,27 @@ export const AboutTitle = styled.h3`
   @media ${devices.mobileL} {
     font-size: 23px;
   }
+  @media ${devices.mobileM} {
+    font-size: 16px;
+  }
 `;
 export const AboutPara = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  line-height: 35px;
   @media ${devices.laptopM} {
     font-size: 18px;
   }
   @media ${devices.laptop} {
     font-size: 16px;
-    line-height: 20px;
 
   }
   @media ${devices.mobileL} {
     font-size: 12px;
-    line-height: unset;
 
+  }
+  @media ${devices.mobileM} {
+    font-size: 10px;
   }
 `;
 
@@ -162,30 +177,24 @@ export const Img = styled.img`
   margin: 10px;
   @media ${devices.laptopL} {
     width: 250px !important;
-    height: 350px !important;
   }
   @media ${devices.laptopM} {
     width: 150px !important;
-    height: 250px !important;
   }
   @media ${devices.tabletL} {
     width: 70px !important;
-    height: 90px !important;
   }
   @media ${devices.mobileL} {
     width: 70px !important;
-    height: 90px !important;
   }
 `;
 export const Scroll = styled.div`
-  align-self: flex-start;
-  margin-top: 170px;
   cursor: pointer;
   padding-right: 200px;
-  @media ${devices.laptopM} {
-    margin-top: 50px;
-    padding-right: 50px;
-  }
+  position:absolute;
+  bottom: -100px;
+  left: 0px;
+  
 `;
 export const SocialContainer = styled.div`
   position: absolute;

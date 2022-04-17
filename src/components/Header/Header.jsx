@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <HeaderContainer id="header">
       <Logo>TheMemoryMint</Logo>
-      <HomeMenu>
+      <HomeMenu id="header">
         <HomeIcon />
       </HomeMenu>
     </HeaderContainer>

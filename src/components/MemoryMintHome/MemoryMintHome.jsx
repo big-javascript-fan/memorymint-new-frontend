@@ -23,7 +23,7 @@ const MemoryMintHome = () => {
     anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
   return (
-    <Container>
+    <Container id="head">
       <InfoRow>
         <InfoColumn>
           <TextWrapper>
@@ -33,7 +33,9 @@ const MemoryMintHome = () => {
               <Button>Pre-sale is live now</Button>
             </Link>
           </TextWrapper>
-          <Scroll onClick={() => scrollTo("footer")}>
+          <Scroll onClick={() => {
+
+          }}>
               <ScrollIcon />
           </Scroll>
         </InfoColumn>

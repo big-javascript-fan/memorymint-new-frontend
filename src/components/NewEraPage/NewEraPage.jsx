@@ -29,7 +29,7 @@ const NewEraPage = () => {
             </TextWrapper>
           </InfoColumn>
           <ImgWarpper>
-            <Img src={img1} style={{ width: "421px", height: "421px" }} />
+            <Img src={img1} />
           </ImgWarpper>
         </InfoRow>
         <InfoRow
@@ -40,10 +40,10 @@ const NewEraPage = () => {
           }}
         >
           <ImgWarpper style={{ marginBottom: "30px" }}>
-            <Img src={img2} style={{ width: "321px", height: "321px" }} />
+            <Img src={img2}  />
           </ImgWarpper>
           <ImgWarpper>
-            <Img src={img3} style={{ width: "215px", height: "215px" }} />
+            <Img src={img3} />
           </ImgWarpper>
         </InfoRow>
       </GradientContainer>

@@ -7,6 +7,7 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 100px 0px;
   @media ${devices.laptopM} {
     height: 800px;
   }
@@ -79,14 +80,12 @@ export const TextWrapper = styled.div`
   background-color:#111111;
   margin-top: 30px;
   @media ${devices.laptopM} {
-    height: 200px;
     width: 100%;
   }
   @media ${devices.laptop} {
     width: 100%;
   }
   @media ${devices.mobileL} {
-    height: 100px;
     width: 100%;
   }
 `;

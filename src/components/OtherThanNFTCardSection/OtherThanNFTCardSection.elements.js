@@ -6,15 +6,8 @@ export const Container = styled.div`
   background-image:url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  @media ${devices.laptopM} {
-    height: 800px;
-  }
-  @media ${devices.laptop} {
-    height: 700px;
-  }
-  @media ${devices.mobileL} {
-    height: 500px;
-  }
+  margin: 100px 0px;
+  
 
 }
 `;
@@ -62,12 +55,11 @@ export const SubContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 258px;
   width: 487px;
   border-radius: 10px;
   display: flex;
   margin: 10px 10px;
-  padding: 0px 30px;
+  padding: 20px 30px;
   background: rgba(255, 255, 255, 0.041);
   box-shadow: inset 26.4526px -26.4526px 26.4526px rgba(194, 194, 194, 0.041),
     inset -26.4526px 26.4526px 26.4526px rgba(255, 255, 255, 0.041);
@@ -77,19 +69,16 @@ export const Card = styled.div`
   justify-content: center;
 
   @media ${devices.laptopM} {
-    height: 200px;
     width: 400px;
-    padding: 0px 25px;
+    padding: 20px 25px;
   }
   @media ${devices.laptop} {
-    height: 180px;
     width: 380px;
-    padding: 0px 20px;
+    padding: 20px 20px;
   }
   @media ${devices.mobileL} {
-    height: 150px;
     width: 350px;
-    padding: 0px 10px;
+    padding: 20px 10px;
   }
 `;
 

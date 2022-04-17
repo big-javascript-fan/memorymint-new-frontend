@@ -6,6 +6,7 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 100px 0px;
   
 }
 `;

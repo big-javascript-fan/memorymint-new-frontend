@@ -3,18 +3,15 @@ import { devices } from "../constant";
 import img from "../../assets/img/Bgimage2.png";
 
 export const Container = styled.div`
-height: 1080px;
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: cover;
+margin: 100px 0px;
 @media ${devices.laptopM} {
-  height: 800px;
 }
 @media ${devices.laptop} {
-  height: 700px;
 }
-@media ${devices.mobileL} {
-  height: 500px;
+@media ${devices.mobileL} {;
 }
 }
 }
@@ -65,6 +62,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 42px;
   font-weight: 700;
+  font-family: "Avenir Next LT Pro";
   @media ${devices.laptopM} {
     margin-bottom: 5px;
     font-size: 32px;
@@ -77,7 +75,7 @@ export const Heading = styled.h1`
   }
 `;
 export const Subtitle = styled.p`
-  font-family: "Roboto";
+  font-family: "Avenir Next LT Pro";
   font-size: 14px;
   font-weight: 500;
   @media ${devices.laptop} {
@@ -95,17 +93,13 @@ export const Img = styled.img`
   padding-right: 0;
   border: 0;
   max-width: 100%;
-  max-height: 500px;
   @media ${devices.laptopM} {
     width: 300px !important;
-    height: 300px !important;
   }
   @media ${devices.laptop} {
     width: 200px !important;
-    height: 200px !important;
   }
   @media ${devices.mobileL} {
     width: 100px !important;
-    height: 100px !important;
   }
 `;

@@ -7,6 +7,7 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${img});
+  margin: 100px 0px;
   @media ${devices.laptopM} {
     height: 800px;
   }
@@ -32,7 +33,7 @@ export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 180px 0px 200px;
+  padding: 20px 180px 20px 200px;
   height: 100%;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -40,10 +41,12 @@ export const GradientContainer = styled.div`
     #000000 100%
   );
   @media ${devices.laptopM} {
+    padding: 20px 50px 20px 50px;
     height: 800px;
   }
   @media ${devices.laptop} {
     height: 600px;
+    padding: 20px 20px 20px 20px;
   }
   @media ${devices.mobileL} {
     height: 500px;
@@ -60,9 +63,10 @@ export const GradientContainer = styled.div`
 export const InfoRow = styled.div`
   display: flex;
   justify-content: space-between;
-  @media ${devices.laptopM} {
-    flex-wrap: wrap;
+  @media ${devices.mobileL} {
+    flex-direction: column;
     justify-content: center;
+    align-items:center;
   }
 `;
 
@@ -130,18 +134,21 @@ export const ImgWarpper = styled.div`
   position: relative;
 `;
 export const Img = styled.img`
-
-  @media ${devices.laptopM} {
+  width: 645px;
+  @media ${devices.laptopL} {
     width: 500px;
-    height: 480px;
+   
+  }
+  @media ${devices.laptopM} {
+    width: 350px;
+   
   }
   @media ${devices.laptop} {
-    width: 400px;
-    height: 300px;
+    width: 250px;
+    
   }
   @media ${devices.mobileL} {
-    width: 300px;
-    height: 200px;
+    width: 150px;
   }
 `;
 

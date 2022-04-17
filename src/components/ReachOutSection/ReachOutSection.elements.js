@@ -6,6 +6,7 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 100px 0px;
 }
 `;
 
@@ -69,7 +70,7 @@ export const InputsContainer = styled.div`
 export const InputSubContainer = styled.div`
   border-bottom: 1px solid gray;
   width: 100%;
-  margin: 20px;
+  margin: 20px 10px;
 `;
 export const Input = styled.input`
   background: transparent;

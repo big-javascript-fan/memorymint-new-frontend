@@ -10,6 +10,7 @@ align-items: center;
 justify-content: center;
 background-color: black;
 padding:0px 180px 0px 200px;
+margin: 100px 0px;
 @media ${devices.laptopM} {
   height: 800px;
 }
@@ -107,7 +108,6 @@ export const Img = styled.img`
   padding-right: 0;
   border: 0;
   max-width: 100%;
-  max-height: 500px;
   margin-bottom: 30px;
   @media ${devices.mobileL} {
     margin-bottom: 'unset';

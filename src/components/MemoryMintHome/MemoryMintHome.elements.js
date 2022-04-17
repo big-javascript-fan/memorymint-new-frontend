@@ -6,23 +6,18 @@ export const Container = styled.div`
   margin-left:auto;
   padding:0px 180px 0px 200px;
   background-image: url(${bg1});
-  height: 1080px;
   background-repeat: no-repeat;
   background-size: cover;
   @media ${devices.laptopM} {
-    height: 800px;
   }
   @media ${devices.laptop} {
-    height: 700px;
     padding:0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
     padding:0px 10px 0px 10px;
-    height: 500px;
   }
   
   @media ${devices.mobileM} {
-    
     height: 400px;
   }
 }
@@ -38,6 +33,7 @@ export const InfoColumn = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position:relative;
 `;
 
 export const TextWrapper = styled.div``;
@@ -141,9 +137,12 @@ export const Img = styled.img`
   }
 `;
 export const Scroll = styled.div`
-  align-self: flex-start;
   margin-top: 100px;
   cursor: pointer;
+  position:absolute;
+  bottom: 10px;
+  left: 0px;
+  
 `;
 export const SocialContainer = styled.div`
   position: absolute;

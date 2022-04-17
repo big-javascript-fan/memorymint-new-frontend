@@ -10,15 +10,18 @@ export const FooterContainer = styled.div`
     inset -38.1388px 38.1388px 38.1388px rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(25.1716px);
   height: 100px;
+  position: relative;
   @media ${devices.laptopM} {
     padding: 50px
 
-}
+  }
   @media ${devices.laptop} {
     padding: 20px
   }
   @media ${devices.mobileL} {
-    padding: 10px
+    flex-direction: column;
+    justify-content: center;
+    align-item: center;
   }
 
 }
@@ -43,14 +46,17 @@ export const FooterMenu = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
-  :hover {
-    transform: scale(1.25, 1.25);
-  }
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translate(-50%, -50%);
+  
 `;
 
 export const CopyRightSec = styled.div`
   font-size: 16px;
   font-weight: 400;
+  align-self: center;
   @media ${devices.laptopM} {
     font-size: 14px;
 

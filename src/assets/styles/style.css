@@ -13,6 +13,7 @@
 body {
     font-family: 'Avenir Next LT Pro';
     font-weight: 400;
+    background-color: #010101;
 }
 svg {
     cursor: pointer;

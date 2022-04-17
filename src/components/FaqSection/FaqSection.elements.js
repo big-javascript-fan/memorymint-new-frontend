@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 1080px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 100px 0px;
   background-image: url(${img});
 
   @media ${devices.laptopM} {
@@ -57,9 +58,7 @@ export const InfoRow = styled.div`
   @media ${devices.laptopM} {
     justify-content: center;
   }
-  @media ${devices.tabletL} {
-    flex-direction: column;
-  }
+  
 `;
 
 export const InfoColumn = styled.div`
@@ -190,7 +189,7 @@ export const Img = styled.img`
     width: 250px;
   }
   @media ${devices.mobileL} {
-    width: 150px;
+   display:none;
   }
 `;
 export const ListContainer = styled.ul`
