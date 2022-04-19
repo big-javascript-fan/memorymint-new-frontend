@@ -6,17 +6,10 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 100px 0px;
-  
+  margin: 50px 0px;
 }
 `;
 
-// @media ${devices.laptop} {
-//   height: 700px;
-// }
-// @media ${devices.mobileL} {
-//   height: 500px;
-// }
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;
@@ -43,23 +36,28 @@ export const Card = styled.div`
   height: 300px;
   width: 487px;
   border-radius: 10px;
-  margin: 0px 10px;
+  margin: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding:15px 30px;
   box-shadow: inset 26.4526px -26.4526px 26.4526px rgba(194, 194, 194, 0.041), inset -26.4526px 26.4526px 26.4526px rgba(255, 255, 255, 0.041);
   backdrop-filter: blur(92.0549px); 
+  @media ${devices.laptopL} {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   @media ${devices.laptopM} {
     height: auto;
     width: auto;
     margin: 10px;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   @media ${devices.laptop} {
     height: auto;
     width: auto;
-
+    margin-top: 20px;
   }
 }
 `;

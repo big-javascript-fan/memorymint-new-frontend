@@ -47,7 +47,7 @@ export const FooterMenu = styled.div`
   align-items: center;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0;
   right: 0px;
   transform: translate(-50%, -50%);
   

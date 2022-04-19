@@ -34,7 +34,7 @@ const MemoryMintHome = () => {
             </Link>
           </TextWrapper>
           <Scroll onClick={() => {
-
+            scrollTo('card_section');
           }}>
               <ScrollIcon />
           </Scroll>

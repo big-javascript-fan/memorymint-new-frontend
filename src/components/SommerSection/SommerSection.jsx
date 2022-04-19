@@ -42,7 +42,7 @@ const SommerSection = () => {
               <ScrollIcon />
             </Scroll>
             <div>
-              <AboutTitle>Abou The Collection</AboutTitle>
+              <AboutTitle>About The Collection</AboutTitle>
               <AboutPara>
                 Sommer Shiels is a journalist, beauty industry expert and travel
                 blogger. These memories were created in 2019 while on-location

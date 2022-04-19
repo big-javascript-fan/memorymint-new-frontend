@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
     padding: 10px 50px;
   }
   @media ${devices.mobileL} {
-    padding: 10px 50px;
+    padding: 10px 45px;
   }
 `;
 
@@ -63,6 +63,9 @@ export const HomeMenu = styled.div`
   width: 35px;
   height: 35px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   :hover {
     transform: scale(1.25, 1.25);
   }

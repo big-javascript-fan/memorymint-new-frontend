@@ -16,7 +16,7 @@ const Footer = () => {
       <Logo>TheMemoryMint</Logo>
       <CopyRightSec>All rights reserved 2022. Visible Things</CopyRightSec>
       <FooterMenu onClick={() => scrollTo("head")}>
-        Top <MoveTop/>
+        <MoveTop/>
       </FooterMenu>
     </FooterContainer>
   );

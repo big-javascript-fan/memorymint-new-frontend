@@ -33,6 +33,7 @@ export const TopTitle = styled.div`
   backdrop-filter: blur(16.5107px);
   border-radius: 40px;
   padding: 12px 30px;
+  margin-bottom: 20px;
   @media ${devices.laptopM} {
     padding: 12px 30px;
   }

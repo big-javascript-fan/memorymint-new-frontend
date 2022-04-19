@@ -34,6 +34,7 @@ export const InfoColumn = styled.div`
   align-items: center;
   justify-content: center;
   position:relative;
+  margin-left: 20px;
 `;
 
 export const TextWrapper = styled.div``;
@@ -149,4 +150,10 @@ export const SocialContainer = styled.div`
   right: 48px;
   top: 50%;
   transform: translate(-50%, -50%);
+  @media ${devices.mobileL} {
+    right: 10px;
+  }
+  @media ${devices.mobileM} {
+    right: 10px;
+  }
 `;

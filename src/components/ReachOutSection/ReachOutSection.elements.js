@@ -6,11 +6,10 @@ export const Container = styled.div`
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 `;
 
-// }
 export const GradientContainer = styled.div`
   display: flex;
   align-items: center;

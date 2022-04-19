@@ -135,6 +135,7 @@ export const ImgWarpper = styled.div`
 `;
 export const Img = styled.img`
   width: 645px;
+  object-fit: contain;
   @media ${devices.laptopL} {
     width: 500px;
    

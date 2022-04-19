@@ -7,7 +7,7 @@ export const Container = styled.div`
   height: 1080px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 100px 0px;
+  margin: 50px 0px;
   background-image: url(${img});
 
   @media ${devices.laptopM} {

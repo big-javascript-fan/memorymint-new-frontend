@@ -18,7 +18,11 @@ const NewEraPage = () => {
   return (
     <Container>
       <GradientContainer>
-        <InfoRow>
+        <InfoRow
+          style={{
+            justifyContent: 'space-between'
+          }}
+        >
           <InfoColumn>
             <TextWrapper>
               <Heading>ANNOUNCING A NEW ERA IN NFTS</Heading>

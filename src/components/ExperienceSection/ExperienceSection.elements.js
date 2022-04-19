@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   padding:0px 180px 0px 200px;
   background-color: #010101;
-  margin: 100px 0px;
+  margin: 50px 0px;
   @media ${devices.laptopM} {
     padding:0px 50px 0px 50px;
   }

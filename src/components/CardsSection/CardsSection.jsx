@@ -29,7 +29,7 @@ const CardsSection = () => {
     },
   ];
   return (
-    <Container>
+    <Container id="card_section">
       <GradientContainer>
         {data.map((d) => {
           return (
