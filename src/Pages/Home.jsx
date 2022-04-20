@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <>
       <MemoryMintHome />
-      <CardsSection />
-      <ExperienceSection />
       <OtherThanNFTCardSection />
+      <ExperienceSection />
       <NewEraPage />
+      <CardsSection />
       <TicketMetaVerseSection />
       <RoadMapSec title="Road Map" cardData={cardData}  />
       <FaqSection />

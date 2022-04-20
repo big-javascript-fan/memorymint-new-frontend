@@ -23,10 +23,6 @@ const TicketMetaVerseSection = () => {
           <InfoColumn>
             <TextWrapper>
               <Heading>YOUR TICKET TO THE METAVERSE</Heading>
-              <Subtitle>
-                Unique, one-of-a-kind memories, preserved as immersive virtual
-                reality experiences, individually minted on the blockchain.
-              </Subtitle>
               <ListContainer>
                 <List>
                   Customize your own WebXR Environment to create your ultimate
