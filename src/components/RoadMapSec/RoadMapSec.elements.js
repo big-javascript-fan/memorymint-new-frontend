@@ -3,11 +3,11 @@ import { devices } from "../constant";
 import img from "../../assets/img/Bgimage2.png";
 
 export const Container = styled.div`
-  height: 1080px;
+  height: 900px;
   background-image: url(${img});
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 50px 0px;
+  margin: 20px 0px;
   @media ${devices.laptopM} {
     height: 800px;
   }

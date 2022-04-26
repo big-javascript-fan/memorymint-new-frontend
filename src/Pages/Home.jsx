@@ -21,7 +21,6 @@ const Home = () => {
     <>
       <MemoryMintHome />
       <OtherThanNFTCardSection />
-      <ExperienceSection />
       <NewEraPage />
       <CardsSection />
       <TicketMetaVerseSection />

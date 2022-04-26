@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
     padding: 10px 50px;
   }
   @media ${devices.mobileL} {
-    padding: 10px 45px;
+    padding: 10px 30px;
   }
 `;
 

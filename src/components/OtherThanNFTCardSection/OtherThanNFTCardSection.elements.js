@@ -88,14 +88,14 @@ export const IconSec = styled.div`
 `;
 export const TitleSec = styled.h1`
 font-size:42px;
-margin-bottom:100px;
+margin-top: 30px;
 @media ${devices.laptopM} {
   font-size:32px;
-margin-bottom:60px;
+  margin-bottom: 20px;
 }
 @media ${devices.laptop} {
   font-size:22px;
-  margin-bottom:40px;
+  margin-bottom:20px;
 @media ${devices.mobileL} {
   font-size:16px;
   margin-bottom:20px;

@@ -27,7 +27,7 @@ export const Container = styled.div`
 
 export const Card = styled.div`
 
-margin: 100px 0px;
+  margin: 50px 0px;
   height: 320px;
   width: 1517px;
   border-radius: 30px;
@@ -48,7 +48,7 @@ margin: 100px 0px;
   }
   @media ${devices.mobileL} {
     height: 180px;
-    width: 517px;
+    width: 100%;
   }
 }
 `;

@@ -4,11 +4,11 @@ const ExperienceSection = () => {
   return (
     <Container>
       <Card>
-          <TitleSec>They're Experiences</TitleSec>
-          <Button onClick={() => {
-            // TODO: Handle Click
-          }}>Launch sample</Button>
-          </Card>
+        <TitleSec>They're Experiences</TitleSec>
+        <Button onClick={() => {
+          // TODO: Handle Click
+        }}>Launch sample</Button>
+      </Card>
     </Container>
   );
 };

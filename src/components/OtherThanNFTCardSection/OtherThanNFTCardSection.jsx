@@ -8,6 +8,7 @@ import {
   SubContainer,
   GradientContainer
 } from "./OtherThanNFTCardSection.elements";
+import { Card as ExperienceCard, TitleSec as ExperienceTitleSec, Button } from "../ExperienceSection/ExperienceSection.elements";
 import CameraIcon from "../common/icons/CameraIcon";
 import EyeIcon from "../common/icons/EyeIcon";
 import TSixtyIcon from "../common/icons/TSixtyIcon";
@@ -33,6 +34,12 @@ const OtherThanNFTCardSection = () => {
     <Container>
       <GradientContainer>
           <TitleSec>They're Not Just NFTs</TitleSec>
+          <ExperienceCard>
+            <ExperienceTitleSec>They're Experiences</ExperienceTitleSec>
+            <Button onClick={() => {
+              // TODO: Handle Click
+            }}>Launch sample</Button>
+          </ExperienceCard>
           <SubContainer>
         {data.map((d) => {
           return (

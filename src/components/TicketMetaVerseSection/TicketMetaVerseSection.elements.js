@@ -8,7 +8,7 @@ export const Container = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(${img});
-  margin: 100px 0px;
+  margin: 30px 0px;
   @media ${devices.laptopM} {
     height: 800px;
   }
@@ -51,7 +51,7 @@ export const GradientContainer = styled.div`
     padding: 0px 50px 0px 50px;
   }
   @media ${devices.mobileL} {
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
   }
 `;
 
