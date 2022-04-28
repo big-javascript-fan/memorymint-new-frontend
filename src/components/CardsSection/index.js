@@ -1,2 +1,3 @@
 import CardsSection from './CardsSection'
-export  default CardsSection
+
+export default CardsSection

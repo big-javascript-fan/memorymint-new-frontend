@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { devices } from "../constant";
+
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,11 @@ export const Logo = styled.div`
   }
 `;
 
+export const RightContainer = styled.div`
+	display: flex;
+	align-items: center;
+`;
+
 export const HomeMenu = styled.div`
   width: 35px;
   height: 35px;
@@ -70,3 +76,11 @@ export const HomeMenu = styled.div`
     transform: scale(1.25, 1.25);
   }
 `;
+
+export const MintBtn = styled.div`
+	cursor: pointer;
+	margin-left: 24px;
+	border: 1px solid white;
+	padding: 12px;
+	border-radius: 12px;
+`
