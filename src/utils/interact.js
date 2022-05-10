@@ -1,5 +1,6 @@
-import Web3 from "web3";
+import * as ethers from 'ethers'
 import contractAbi from '../utils/abi.json'
+import Web3Modal from 'web3modal'
 
 export const connectWallet = async () => {
 	if (window.ethereum) {
@@ -79,13 +80,37 @@ export const getCurrentWalletConnected = async () => {
 	}
 };
 
-export const mint = async () => {
+export const mint = async (kind, amount) => {
+	const NODE_API_KEY = 'ec74d1b14a7948388274b61bbd842489';
+	const providerOptions = {
+		walletconnect: {
+			// package: WalletConnectProvider,
+			options: {
+			rpc: {
+				4: 'https://rinkeby.infura.io/v3/' + NODE_API_KEY
+			},
+			network: 'rinkeby',
+			chainId: 4,
+			infuraId: NODE_API_KEY,
+			}
+		}
+	};
 	const contractAddr = "0xdFB95Fc9D00153e348c32A2cF4B120222ED3Aeb9"
 
-	const provider = 'https://rinkeby.infura.io/v3/ec74d1b14a7948388274b61bbd842489'
-	const Web3Client = new Web3(new Web3.providers.HttpProvider(provider));
-	const contract = new Web3Client.eth.Contract(contractAbi, contractAddr);
-	const result = await contract.methods.mint().call();
+	const web3modal = new Web3Modal({
+		network: "rinkeby",
+		cacheProvider: false, // optional
+		providerOptions, // required
+	})
+	const connection = await web3modal.connect()
+	const provider = new ethers.providers.Web3Provider(connection)
+	const signer = provider.getSigner()
 
-	return result;
+	const contract = new ethers.Contract(contractAddr, contractAbi, signer)
+	const price = await contract.currentPrice();
+	console.log('price', price);
+	console.log('amount', amount);
+	const transaction = await contract.mint(kind, amount, { value: (price * parseInt(amount)) });
+
+	await transaction.wait()
 }

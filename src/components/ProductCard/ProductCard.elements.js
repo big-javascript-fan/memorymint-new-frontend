@@ -58,6 +58,8 @@ export const ImgContainer = styled.div`
   }
 `;
 export const Img = styled.img`
+  width: 310px;
+  height: 174px;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;

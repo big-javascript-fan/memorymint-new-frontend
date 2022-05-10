@@ -18,3 +18,45 @@ code {
     height: 15px;
   }
 }
+
+.gltf-content {
+  width: 80%;
+  height: 70%;
+}
+
+.mint-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint-input {
+  display: inline-block;
+  margin-left: 10px;
+  width: 40px;
+  height: 30px;
+  background: #222222;
+  border-radius: 3px;
+  padding-left: 12px;
+  padding-top: 3px;
+  font-size: 18px;
+}
+
+.mint-input:focus {
+  outline: none;
+}
+
+.mint-btn {
+  margin-left: 50px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #f94144;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}

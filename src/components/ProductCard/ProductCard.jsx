@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense, useState, useRef, useEffect } from "react";
 import {
 	Container,
 	Img,
@@ -13,59 +13,137 @@ import {
 	ImgContainer,
 	Button,
 } from "./ProductCard.elements";
-import ProductImg from "../../assets/img/product-img.png";
-import LoveIcon from "../../components/common/icons/LoveIcon";
+import FullscreenModal from "../FullscreenModal/FullscreenModal";
+import { Canvas } from "react-three-fiber";
+import { OrbitControls, useGLTF, useAnimations } from "@react-three/drei";
+import PreviewImg from '../../assets/img/gallery/3dpreview.jpeg';
 import EthIcon from "../../components/common/icons/EthIcon";
-import { mint } from "../../utils/interact";
 
-const ProductCard = ({ item, title }) => {
+function ModelHair(props) {
+  const group = useRef();
+  const { scene, animations } = useGLTF("/hair.glb");
 
-	console.log('item info =====', item)
-	const [kind, setKind] = useState(1)
-	const [mintAmount, setMintAmount] = useState(0)
+  const { actions } = useAnimations(animations, group);
+  useEffect(() => {
+    Object.keys(actions).map(key => {
+      return actions[key].play();
+    });
+  });
 
-	const handleClick = async () => {
-		const mintSuccess = await mint(kind, mintAmount);
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <primitive object={scene} />
+    </group>
+  );
+}
 
-		console.log('mint result ------', mintSuccess)
+
+function ModelKiss(props) {
+  const group = useRef();
+  const { scene, animations } = useGLTF("/kiss.glb");
+
+  const { actions } = useAnimations(animations, group);
+  useEffect(() => {
+    Object.keys(actions).map(key => {
+      return actions[key].play();
+    });
+  });
+
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+function ModelEye(props) {
+  const group = useRef();
+  const { scene, animations } = useGLTF("/eye.glb");
+
+  const { actions } = useAnimations(animations, group);
+  useEffect(() => {
+    Object.keys(actions).map(key => {
+      return actions[key].play();
+    });
+  });
+
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <primitive object={scene} />
+    </group>
+  );
+}
+
+const ProductCard = ({ item, title, id }) => {
+	const [show, setShow] = useState(false);
+	const [show3d, set3dShow] = useState(false);
+	const [currentImg, setCurrentImg] = useState('');
+	const [current3dModel, setCurrent3dModel] = useState(null);
+
+	const closeModal = () => {
+		setShow(false);
+	};
+
+	const showModal = (imgUrl) => {
+		setShow(true);
+		setCurrentImg(imgUrl)
 	}
 
-	const cardDatas = [
-		{
-			id: 1,
-			btnName: 'Mint',
-			title: 'Playing With My Hair...',
-			tag: 'Pre-Sale',
-			preBalance: 0.7,
-			preRating: 'ETH/66',
-			saleBalance: 0.8,
-			saleRating: 'ETH/266'
-		},
-		{
-			id: 2,
-			btnName: 'Mint',
-			title: 'Playing With My Hair...',
-			tag: 'Pre-Sale',
-			preBalance: 0.7,
-			preRating: 'ETH/66',
-			saleBalance: 0.8,
-			saleRating: 'ETH/266'
+	const close3dModal = () => {
+		set3dShow(false);
+	};
+
+	const show3dModal = () => {
+		set3dShow(true);
+	}
+
+	const handleClick = () => {
+		if (item.type === 'image') {
+			showModal(item.img)
+		} else {
+			if (id === 1) {
+				setCurrent3dModel(
+					model3dSection(<ModelHair />)
+				)
+			} else if (id === 2) {
+				setCurrent3dModel(
+					model3dSection(<ModelKiss />)
+				)
+			} else {
+				setCurrent3dModel(
+					model3dSection(<ModelEye />)
+				)
+			}
+			show3dModal()
 		}
-	]
+	}
+
+	const model3dSection = (children) => {
+		return (
+			<div className="gltf-content">
+				<Canvas camera={{ position: [0, 0, 50], fov: 50 }}>
+					<ambientLight intensity={1} />
+					<Suspense fallback={null}>
+						{ children }
+					</Suspense>
+					<OrbitControls />
+				</Canvas>
+			</div>
+		)
+	}
 
 	return (
 		<Container>
 			<ImgContainer>
-				<Img src={ProductImg} />
+				<Img src={item.type === 'image' ? item.img : PreviewImg} />
 				<OverlayContainer>
 					<Overlay>
-						<Button onClick={handleClick}>Mint</Button>
+						<Button onClick={handleClick}>{item.type !== 'image' && '3d '}Preview</Button>
 					</Overlay>
 				</OverlayContainer>
 			</ImgContainer>
 			<TitleIconContainer>
-				<Title>Playing With My Hair..</Title>
-				<LoveIcon />
+				<Title>{title}</Title>
 			</TitleIconContainer>
 			<PriceDetailContainer>
 				<SaleContainer
@@ -88,6 +166,8 @@ const ProductCard = ({ item, title }) => {
 					</PriceContainer>
 				</SaleContainer>
 			</PriceDetailContainer>
+			<FullscreenModal show={show} closeModal={closeModal} imgDetail={currentImg} type="image" />
+			<FullscreenModal show={show3d} closeModal={close3dModal} imgDetail={current3dModel} type="3d" />
 		</Container>
 	);
 };

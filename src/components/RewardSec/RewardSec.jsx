@@ -105,7 +105,7 @@ const RewardSec = () => {
 					</Container>
 				);
 			})}
-			<FullscreenModal show={show} closeModal={closeModal} imgDetail={currentImg} />
+			<FullscreenModal show={show} closeModal={closeModal} imgDetail={currentImg} type="image" />
 		</>
 	);
 };

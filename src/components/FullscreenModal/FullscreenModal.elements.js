@@ -6,7 +6,8 @@ export const ModalWrapper = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: #333333aa;
+
   display: ${(props) => (props.show ? 'block' : 'none')};
   z-index: ${(props) => (props.show ? '3' : '-3')};
   opacity: ${(props) => (props.show ? '1' : '0')};

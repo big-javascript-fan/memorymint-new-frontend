@@ -7,7 +7,7 @@ import {
 import CloseIcon from '../../assets/img/close-icon.svg'
 
 const FullscreenModal = (props) => {
-	const { show, closeModal, imgDetail } = props;
+	const { show, closeModal, imgDetail, type } = props;
 
 	return (
 		<ModalWrapper show={show}>
@@ -16,7 +16,10 @@ const FullscreenModal = (props) => {
 					<img src={CloseIcon} alt="close" />
 				</CrossIconContainer>
 				<ImgConatiner>
-					<img src={imgDetail} alt="image" />
+				{ type === 'image' ?
+					<img src={imgDetail} alt="Memorial" style={{ width: '80%' }} />
+					: imgDetail
+				}
 				</ImgConatiner>
 			</ModalContainer>
 		</ModalWrapper>
