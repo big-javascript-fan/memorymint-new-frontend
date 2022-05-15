@@ -30,7 +30,7 @@ const MemoryMintHome = () => {
             <Heading>Memory Mint</Heading>
             <Subtitle>MEMORIES FADE. NFT'S DON'T.</Subtitle>
             <Link to="/sale">
-              <Button>Pre-sale is live now</Button>
+              <Button>Go to Mint</Button>
             </Link>
           </TextWrapper>
           <Scroll onClick={() => {
