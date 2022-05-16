@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../constant";
 
 export const Container = styled.div`
-height: 800px;
+height: 500px;
 background-repeat: no-repeat;
 background-size: cover;
 display: flex;
@@ -10,7 +10,7 @@ align-items: center;
 justify-content: center;
 background-color: black;
 padding:0px 180px 0px 200px;
-margin: 100px 0px;
+margin: 0 0;
 @media ${devices.laptopM} {
   height: 800px;
 }

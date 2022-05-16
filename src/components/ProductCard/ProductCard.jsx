@@ -147,21 +147,21 @@ const ProductCard = ({ item, title, id }) => {
 			</TitleIconContainer>
 			<PriceDetailContainer>
 				<SaleContainer
-					style={{ borderRight: "1px solid gray", paddingRight: "20px" }}
+					style={{ borderRight: "1px solid gray", paddingRight: "10px" }}
 				>
 					<Tag>Pre-Sale</Tag>
 					<PriceContainer>
 						<EthIcon style={{ padding: "7px" }} />
-						<span style={{ fontSize: "22px", padding: "7px" }}>0.7</span>
+						<span style={{ fontSize: "22px", padding: "7px" }}>0.08</span>
 						<span style={{ fontSize: "16px" }}>ETH/66</span>
 					</PriceContainer>
 				</SaleContainer>
 
-				<SaleContainer style={{ paddingLeft: "20px" }}>
+				<SaleContainer style={{ paddingLeft: "10px" }}>
 					<Tag>General-Sale</Tag>
 					<PriceContainer>
 						<EthIcon style={{ padding: "7px" }} />
-						<span style={{ fontSize: "22px", padding: "7px" }}>0.8</span>
+						<span style={{ fontSize: "22px", padding: "7px" }}>0.1</span>
 						<span style={{ fontSize: "16px" }}>ETH/266</span>
 					</PriceContainer>
 				</SaleContainer>

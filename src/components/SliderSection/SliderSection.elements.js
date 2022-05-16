@@ -4,7 +4,7 @@ import { devices } from "../constant";
 export const Container = styled.div`
 display: flex;
 padding:0px 180px 0px 200px;
-height: 800px;
+height: 600px;
 background-color:#010101;
 flex-direction: column;
 justify-content: center;
