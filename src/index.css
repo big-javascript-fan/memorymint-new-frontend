@@ -60,3 +60,7 @@ code {
   padding: 8px 15px;
   cursor: pointer;
 }
+
+.Toastify div {
+  color: black !important;
+}

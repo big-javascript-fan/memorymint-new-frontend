@@ -27,7 +27,7 @@ export const connectWallet = async () => {
 					<p>
 						{" "}
 						🦊{" "}
-						<a target="_blank" href={`https://metamask.io/download.html`}>
+						<a target="_blank" href={`https://metamask.io/download.html`} rel="noreferrer">
 							You must install Metamask, a virtual Ethereum wallet, in your
 							browser.
 						</a>
@@ -69,7 +69,7 @@ export const getCurrentWalletConnected = async () => {
 					<p>
 						{" "}
 						🦊{" "}
-						<a target="_blank" href={`https://metamask.io/download.html`}>
+						<a target="_blank" href={`https://metamask.io/download.html`} rel="noreferrer">
 							You must install Metamask, a virtual Ethereum wallet, in your
 							browser.
 						</a>
@@ -95,7 +95,7 @@ export const mint = async (kind, amount) => {
 			}
 		}
 	};
-	const contractAddr = "0xdFB95Fc9D00153e348c32A2cF4B120222ED3Aeb9"
+	const contractAddr = "0x8201E43aaD747657E089B3FAdC19A2E6f144D552"
 
 	const web3modal = new Web3Modal({
 		network: "rinkeby",
@@ -109,8 +109,8 @@ export const mint = async (kind, amount) => {
 	const contract = new ethers.Contract(contractAddr, contractAbi, signer)
 	const price = await contract.currentPrice();
 	console.log('price', price);
-	console.log('amount', amount);
-	const transaction = await contract.mint(kind, amount, { value: (price * parseInt(amount)) });
+	const transaction = await contract.mint(kind, amount, { value: (price * parseInt(amount)).toString() });
+	// const transaction = await contract.mint(kind, amount);
 
 	await transaction.wait()
 }

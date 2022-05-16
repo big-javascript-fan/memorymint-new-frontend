@@ -57,7 +57,7 @@ export const Heading = styled.h1`
     font-size: 18px;
   }
   @media ${devices.mobileL} {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 export const Subtitle = styled.p`
@@ -70,15 +70,15 @@ export const Subtitle = styled.p`
     font-size: 18px;
   }
   @media ${devices.mobileL} {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 export const Paragraph = styled.p`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 10px;
   @media ${devices.laptopM} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.laptop} {
     font-size: 12px;

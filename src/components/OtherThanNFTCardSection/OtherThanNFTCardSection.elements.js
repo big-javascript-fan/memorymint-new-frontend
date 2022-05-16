@@ -107,7 +107,7 @@ export const DescriptionSec = styled.p`
     font-size: 16px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;

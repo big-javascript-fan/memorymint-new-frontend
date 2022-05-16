@@ -23,7 +23,7 @@ const LoveIcon = () => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stop-color="white" />
-					<stop offset="1" stop-color="white" stop-opacity="0.5" />
+					<stop offset="1" stop-color="white" stopOpacity="0.5" />
 				</linearGradient>
 			</defs>
 		</svg>

@@ -58,9 +58,9 @@ const RewardSec = () => {
 
 	return (
 		<>
-			{data.map((d) => {
+			{data.map((d, index) => {
 				return (
-					<Container>
+					<Container key={index}>
 						<InfoRow style={{ width: "100%" }}>
 							<InfoColumn>
 								<TextWrapper>

@@ -16,6 +16,9 @@ import {
 import leftSideImg from "../../assets/img/img2.png";
 
 const TicketMetaVerseSection = () => {
+  const openXR = () => {
+    window.open('https://project7933.com/e8CJXuK/memory-mint', '_new');
+  }
   return (
     <Container>
       <GradientContainer>
@@ -43,7 +46,7 @@ const TicketMetaVerseSection = () => {
                   you meet in the Metaverse.
                 </List>
               </ListContainer>
-              <Button>Experience sample Memory Vault</Button>
+              <Button onClick={() => openXR()}>Experience sample Memory Vault</Button>
             </TextWrapper>
           </InfoColumn>
           <ImgWarpper>

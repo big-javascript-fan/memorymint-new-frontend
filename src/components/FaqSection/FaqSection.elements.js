@@ -108,7 +108,7 @@ export const Questions = styled.div`
     font-size: 18px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;
@@ -127,7 +127,7 @@ export const QAContainer = styled.div`
 
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 0px 5px 0px;
 
   }
@@ -205,7 +205,7 @@ export const List = styled.li`
     font-size: 18px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;

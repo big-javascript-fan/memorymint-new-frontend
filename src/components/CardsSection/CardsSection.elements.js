@@ -70,7 +70,7 @@ margin-top:30px;
   font-size:18px
 }
 @media ${devices.mobileL} {
-  font-size:14px
+  font-size:16px
 
 }
 }
@@ -79,10 +79,10 @@ export const DescriptionSec = styled.p`
 text-align: center;
 font-size:18px
 @media ${devices.laptop} {
-  font-size:14px
+  font-size:16px
 }
 @media ${devices.mobileL} {
-  font-size:12px
+  font-size:16px
 
 }
 }

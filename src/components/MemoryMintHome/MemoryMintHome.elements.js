@@ -73,7 +73,7 @@ export const Subtitle = styled.div`
     font-size: 18px;
   }
   @media ${devices.mobileL} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileM} {
     font-size: 12px;
@@ -101,7 +101,7 @@ export const Button = styled.button`
   }
   @media ${devices.laptop} {
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 15px;
 
   }

@@ -10,13 +10,16 @@ const Header = () => {
 	const [walletAddress, setWallet] = useState('');
 	const [status, setStatus] = useState('');
 
-	useEffect(async () => {
-		const { address, status } = await getCurrentWalletConnected();
+	useEffect(() => {
+		async function init() {
+			const { address, status } = await getCurrentWalletConnected();
+			setWallet(address);
+			setStatus(status);
+			addWalletListener();
+		}
 
-		setWallet(address);
-		setStatus(status);
-
-		addWalletListener();
+		init();
+		return null;
 	}, []);
 
 	function addWalletListener() {
@@ -35,7 +38,7 @@ const Header = () => {
 				<p>
 					{" "}
 					🦊{" "}
-					<a target="_blank" href={`https://metamask.io/download.html`}>
+					<a target="_blank" href={`https://metamask.io/download.html`} rel="noreferrer">
 						You must install Metamask, a virtual Ethereum wallet, in your
 						browser.
 					</a>

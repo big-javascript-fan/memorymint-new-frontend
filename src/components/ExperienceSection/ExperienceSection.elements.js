@@ -94,7 +94,7 @@ export const Button = styled.button`
 
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px 20px;
 
   }

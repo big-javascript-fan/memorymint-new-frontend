@@ -3,7 +3,7 @@ import React from 'react'
 const EyeIcon = () => {
 	return (
 		<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g clip-path="url(#clip0_475_981)">
+			<g clipPath="url(#clip0_475_981)">
 				<path d="M67.3317 36.4622V41.608C72.38 44.1248 75.3133 47.2401 75.3133 50.3306C75.3133 57.4136 61.0305 62.9779 46.8997 64.1507C45.6095 64.2567 44.6505 65.3865 44.7583 66.6722C44.8595 67.9088 45.9281 68.9072 47.2855 68.8103C59.5859 67.8 79.9992 62.5041 79.9992 50.3306C79.9992 43.6819 73.479 39.108 67.3317 36.4622Z" fill="url(#paint0_linear_475_981)" />
 				<path d="M25.9095 56.2109C24.6081 54.8897 22.3464 55.5354 21.9492 57.3505L20.9138 62.0814C5.40251 57.9159 -2.04468 48.9568 12.6953 41.608V36.4622C-6.64624 44.7871 -3.61108 60.4234 19.9125 66.6554L18.9814 70.9089C18.5822 72.7326 20.3936 74.2752 22.1406 73.578L33.8553 68.9026C35.405 68.2843 35.8297 66.2854 34.6566 65.0939L25.9095 56.2109Z" fill="url(#paint1_linear_475_981)" />
 				<path d="M40.0003 11.5474C23.5624 11.5474 13.2283 25.4988 10.906 28.9794C10.5912 29.4511 10.5912 30.0665 10.906 30.5381C13.2283 34.0186 23.5624 47.9701 40.0003 47.9701C56.4381 47.9701 66.7723 34.0186 69.0946 30.538C69.4093 30.0663 69.4093 29.451 69.0946 28.9793C66.7723 25.4988 56.4381 11.5474 40.0003 11.5474Z" fill="#B1E4F9" />
@@ -15,12 +15,12 @@ const EyeIcon = () => {
 			</g>
 			<defs>
 				<linearGradient id="paint0_linear_475_981" x1="62.3746" y1="36.4622" x2="62.3746" y2="68.8168" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#9953EF" />
-					<stop offset="1" stop-color="#30EBCC" />
+					<stop stopColor="#9953EF" />
+					<stop offset="1" stopColor="#30EBCC" />
 				</linearGradient>
 				<linearGradient id="paint1_linear_475_981" x1="17.664" y1="36.4622" x2="17.664" y2="73.749" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#9953EF" />
-					<stop offset="1" stop-color="#30EBCC" />
+					<stop stopColor="#9953EF" />
+					<stop offset="1" stopColor="#30EBCC" />
 				</linearGradient>
 				<clipPath id="clip0_475_981">
 					<rect width="80" height="79.8193" fill="white" />

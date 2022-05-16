@@ -58,7 +58,7 @@ export const CopyRightSec = styled.div`
   font-weight: 400;
   align-self: center;
   @media ${devices.laptopM} {
-    font-size: 14px;
+    font-size: 16px;
 
 }
   @media ${devices.laptop} {

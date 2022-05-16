@@ -99,7 +99,7 @@ export const Subtitle = styled.div`
     font-size: 18px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;
@@ -123,7 +123,7 @@ export const Button = styled.button`
   @media ${devices.laptop} {
     padding: 5px 10px;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     margin-top: 20px;
@@ -172,7 +172,7 @@ export const List = styled.li`
     margin-bottom: 15px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
   }
   @media ${devices.mobileL} {

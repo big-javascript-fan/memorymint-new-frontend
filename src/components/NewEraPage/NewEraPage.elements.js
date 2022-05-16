@@ -76,7 +76,7 @@ export const Heading = styled.h1`
 `;
 export const Subtitle = styled.p`
   font-family: "Avenir Next LT Pro";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   @media ${devices.laptop} {
     font-size: 12px;

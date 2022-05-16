@@ -43,8 +43,12 @@ const SliderSection = ({ title, cards, id }) => {
 
 	const handleMint = async () => {
 		if (mintAmount > 0) {
-			await mint(id, mintAmount);
-			toast("Mint Success!", { style: { color: 'green' } });
+			try {
+				await mint(id, mintAmount);
+				toast("Mint Success!", { type: toast.TYPE.SUCCESS });
+			} catch (error) {
+				toast(error.reason, { type: toast.TYPE.ERROR });
+			}
 		} else {
 			toast("Mint amount should be over 1!", { style: { color: 'red' } });
 		}
@@ -76,8 +80,8 @@ const SliderSection = ({ title, cards, id }) => {
 			</ProductCardContainer>
 			<div className="mint-container">
 				<label className="mint-label">Amount: </label>
-				<input className="mint-input" disabled type="number" max="9" onChange={onUpdateMintAmount} value={mintAmount} />
-				<div className="mint-btn" aria-disabled>Coming Soon</div>
+				<input className="mint-input" type="number" max="9" onChange={onUpdateMintAmount} value={mintAmount} />
+				<div className="mint-btn">Coming Soon</div>
 			</div>
 			<ToastContainer />
 		</Container>

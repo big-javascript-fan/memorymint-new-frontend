@@ -98,7 +98,7 @@ export const SaleContainer = styled.div`
 `;
 
 export const Tag = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 17px;
   text-align: left;
@@ -124,7 +124,7 @@ export const Button = styled.button`
     font-size: 16px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;

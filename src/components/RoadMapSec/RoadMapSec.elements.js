@@ -102,7 +102,7 @@ font-size: 30px;
   font-size: 18px;
 }
 @media ${devices.mobileL} {
-  font-size: 14px;
+  font-size: 16px;
 }
 `;
 
@@ -120,7 +120,7 @@ export const List = styled.li`
     font-size: 18px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;

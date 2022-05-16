@@ -53,7 +53,7 @@ export const Heading = styled.div`
       padding-bottom: 30px;
     }
     @media ${devices.mobileL} {
-      font-size: 14px;
+      font-size: 16px;
       padding-bottom: 10px;
     }
   }

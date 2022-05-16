@@ -121,7 +121,7 @@ export const Paragraph = styled.div`
     font-size: 18px;
   }
   @media ${devices.laptop} {
-    font-size: 14px;
+    font-size: 16px;
   }
   @media ${devices.mobileL} {
     font-size: 12px;
