@@ -95,7 +95,7 @@ export const mint = async (kind, amount) => {
 			}
 		}
 	};
-	const contractAddr = "0x8201E43aaD747657E089B3FAdC19A2E6f144D552"
+	const contractAddr = "0xf0bAb7d8b46F3fF40c36594856b6A47Bc07bE255"
 
 	const web3modal = new Web3Modal({
 		network: "rinkeby",
