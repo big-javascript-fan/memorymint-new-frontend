@@ -82,23 +82,32 @@ export const getCurrentWalletConnected = async () => {
 
 export const mint = async (kind, amount) => {
 	const NODE_API_KEY = 'ec74d1b14a7948388274b61bbd842489';
+	const chainId = 1;
+	const rpc = {
+		1: 'https://mainnet.infura.io/v3/' + NODE_API_KEY
+	}
+	const network = 'mainnet';
+	// const rpc = {
+	// 	4: 'https://rinkeby.infura.io/v3/' + NODE_API_KEY
+	// };
+	// const chainId = 4;
+	// const network = 'rinkeby';
 	const providerOptions = {
 		walletconnect: {
 			// package: WalletConnectProvider,
 			options: {
-			rpc: {
-				4: 'https://rinkeby.infura.io/v3/' + NODE_API_KEY
-			},
-			network: 'rinkeby',
-			chainId: 4,
-			infuraId: NODE_API_KEY,
+				rpc,
+				network,
+				chainId,
+				infuraId: NODE_API_KEY,
 			}
 		}
 	};
-	const contractAddr = "0xf0bAb7d8b46F3fF40c36594856b6A47Bc07bE255"
+	const contractAddr = "0x543D175A2cFAb9ced91760A451058Bc4902aA238"
+	// const contractAddr = "0xf0bAb7d8b46F3fF40c36594856b6A47Bc07bE255"
 
 	const web3modal = new Web3Modal({
-		network: "rinkeby",
+		network,
 		cacheProvider: false, // optional
 		providerOptions, // required
 	})

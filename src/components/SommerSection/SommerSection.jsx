@@ -42,11 +42,11 @@ const SommerSection = () => {
               <ScrollIcon />
             </Scroll>
             <div>
-              <AboutTitle>About The Collection</AboutTitle>
+              <AboutTitle>About Sommer Shiels</AboutTitle>
               <AboutPara>
-                Sommer Shiels is a journalist, beauty industry expert and travel
-                blogger. These memories were created in 2019 while on-location
-                shooting the documentary, "Origins of Beauty".
+                Journalist, beauty industry adventurer, travel blogger - Sommer Shiels' study of anti-aging and
+                longevity treatments has taken her to over sixty countries in the past ten years. Her first Collection
+                of Memory Mints was captured in 2019 while on-location shooting the documentary, "Origins of Beauty"
               </AboutPara>
             </div>
           </AboutSection>
