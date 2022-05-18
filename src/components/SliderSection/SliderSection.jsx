@@ -81,7 +81,7 @@ const SliderSection = ({ title, cards, id }) => {
 			<div className="mint-container">
 				<label className="mint-label">Amount: </label>
 				<input className="mint-input" type="number" max="9" onChange={onUpdateMintAmount} value={mintAmount} />
-				<div className="mint-btn">Coming Soon</div>
+				<div className="mint-btn" onClick={() => handleMint()}>Mint</div>
 			</div>
 			<ToastContainer />
 		</Container>
