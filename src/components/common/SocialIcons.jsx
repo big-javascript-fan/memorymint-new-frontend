@@ -36,21 +36,14 @@ const SocialIcons = () => {
 				</MenuItem>
 				<MenuItem
 					onClick={() => {
-						//TODO: Click handler
-					}}
-				>
-					<Telegram />
-				</MenuItem>
-				<MenuItem
-					onClick={() => {
-						//TODO: Click handler
+						window.open('https://www.instagram.com/the_memory_mint_nft/', '_blank');
 					}}
 				>
 					<Instgram />
 				</MenuItem>
 				<MenuItem
 					onClick={() => {
-						//TODO: Click handler
+						window.open('https://discord.gg/PphFUbaR', '_blank');
 					}}
 				>
 					<Discord />
