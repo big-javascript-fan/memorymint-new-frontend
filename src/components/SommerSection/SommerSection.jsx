@@ -38,7 +38,7 @@ const SommerSection = () => {
             <Subtitle>Shiels Collection</Subtitle>
           </TextWrapper>
           <AboutSection>
-            <Scroll onClick={() => {}}>
+            <Scroll onClick={() => scrollTo('mint')}>
               <ScrollIcon />
             </Scroll>
             <div>

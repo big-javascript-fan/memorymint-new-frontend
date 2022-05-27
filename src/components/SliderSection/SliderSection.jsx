@@ -55,7 +55,7 @@ const SliderSection = ({ title, cards, id }) => {
 	}
 
 	return (
-		<Container>
+		<Container id="mint">
 			<HeaderContainer>
 				<Heading>{title}</Heading>
 				<SliderActionContainer>
