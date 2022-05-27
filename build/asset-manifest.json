@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5f39155e.css",
-    "main.js": "/static/js/main.a20ca80d.js",
+    "main.js": "/static/js/main.341bd2df.js",
     "static/media/Bgimage4.png": "/static/media/Bgimage4.1216b97dd0a107f1abff.png",
     "static/media/HAIRPLAY5.png": "/static/media/HAIRPLAY5.b0494b653f761391750d.png",
     "static/media/THOSEEYES5.png": "/static/media/THOSEEYES5.bf57c22efdbcdc777a42.png",
@@ -42,10 +42,10 @@
     "index.html": "/index.html",
     "static/media/close-icon.svg": "/static/media/close-icon.e1f5c28374b2ef9aaea0a219b6e6f964.svg",
     "main.5f39155e.css.map": "/static/css/main.5f39155e.css.map",
-    "main.a20ca80d.js.map": "/static/js/main.a20ca80d.js.map"
+    "main.341bd2df.js.map": "/static/js/main.341bd2df.js.map"
   },
   "entrypoints": [
     "static/css/main.5f39155e.css",
-    "static/js/main.a20ca80d.js"
+    "static/js/main.341bd2df.js"
   ]
 }
